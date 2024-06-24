@@ -1,0 +1,225 @@
+#color-palette{
+  color: #7b876d;
+  color: #989E8d;
+  color: #ddb8a6;
+  color: #d49b7e;
+  color: #a1785c;
+  color: #223030;
+  color: #efefe9;
+}
+
+/*Navbar styles*/
+.navbar-custom .navbar-brand, .navbar-custom .nav-link{
+  color:#FAF9F6;
+  text-transform: uppercase;
+}
+
+.navbar-nav{
+  margin-left:auto;
+}
+
+.navbar-brand{
+  margin: 0em 1em;
+}
+
+.navbar-toggler{
+  margin:0em 0.5em;
+}
+
+#navbar-options{
+  margin: 0em 0.5em;
+}
+
+.nav-item *{
+  margin: 0em 0.5em;
+}
+
+.nav-item *:hover{
+  margin: 0em 0.5em;
+}
+
+.navbar-custom .active a{
+  color:#989E8d;
+  font-weight: bold;
+  text-shadow: -0.5px -0.5px #FAF9F6,1px 1px #7b876d;
+}
+
+/*home styles*/
+#home-container{
+  background: url(images/Home-bg.png);
+  background-size:cover;
+}
+
+#home-subtitle{
+  font-family: 'Archivo Black',sans-serif;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+
+@media screen and (min-width: 1200px){
+  #home-subtitle{
+    font-size: 4rem;
+    margin: 0 3rem;
+  }
+}
+
+/*about styles*/
+
+#about-container{
+  background: #ddb8a6;
+}
+
+#about-banner{
+  background: url(images/SonnyAngel.png);
+  background-repeat: repeat;
+  min-height:200vh;
+}
+
+#about-bottom{
+  background:#a1785c;
+  min-height:200vh;
+  padding-bottom:100vh;
+}
+
+#about-content{
+  padding:1em 2em;
+  background-color: #FAF9F6;
+  box-shadow: 0px -1px 1px #FAF9F6, 0px  1px 1px #FAF9F6;
+  border-image-source: url(images/full_lace_border.png);
+  border-image-slice: 90;
+  border-image-width: 40px;
+  border-image-repeat: repeat;
+  border-image-outset: 39px;
+  display:flex;
+  justify-content: space-around;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content:center;
+}
+
+@media screen and (min-width:750px){
+  #about-content{
+    min-height:100vh;
+  }
+}
+
+@media screen and (min-width:1000px){
+  #about-content section{
+    max-width:45vw;
+  }
+}
+
+#about-content figure{
+  margin: 0 auto;
+}
+
+#about-content section p,figcaption{
+  color:#223030;
+  font-size:1.25rem;
+}
+
+figcaption{
+  margin-left:2.5rem;
+}
+
+/*experience styles*/
+
+#experience-bg-layer{
+  z-index:-100;
+}
+
+#experience-bg{
+  background: url(images/CalicoTileSized.png);
+  min-height:600vh;
+}
+
+.text-card-content{
+  margin: 2rem 1rem;
+  padding: 1rem;
+  min-height: 50vh;
+  background:#989E8d;
+  border-radius: 2px;
+  border-image-source: url(images/full_lace_border.png);
+  border-image-slice: 90;
+  border-image-width: 40px;
+  border-image-repeat: repeat;
+  border-image-outset: 30px;
+}
+
+@media screen and (min-width:650px){
+  .text-card-content{
+    max-width:40vw;
+  }
+}
+
+#experience-bottom{
+  background:#ddb8a6;
+  min-height:200vh;
+  z-index:-80;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+#experience-bottom article{
+  margin: 1rem 0;
+}
+
+#skills h4,#education h4{
+  margin-top:1rem;
+}
+
+#skills ul,#education ul{
+  margin: 1rem 0;
+}
+
+#experience-bottom article{
+  max-width:45vw;
+}
+
+@media screen and (max-width:1000px){
+  #experience-bottom article{
+    min-width:70vw;
+  }
+}
+
+/*footer styles*/
+parallax-footer{
+  display:flex;
+  align-content:flex-end;
+  bottom:0;
+  width:100%;
+}
+
+.footer h2{
+  font-size:2rem;
+  color:#FAF9F6;
+  text-align:center;
+  text-shadow: none;
+}
+
+.contact-info{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  list-style-type: none;
+}
+
+.contact-info-items{
+  margin: 0.5em 1em;
+}
+
+/*Parallax*/
+
+.parallax-header{
+  z-index: 100;
+}
+
+#about-banner-layer{
+  z-index: -50;
+}
+
+#about-footer-layer{
+  z-index: -100;
+}
