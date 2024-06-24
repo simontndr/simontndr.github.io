@@ -21,12 +21,12 @@ function App() {
     cardText:"Working independently to develop a responsive company landing page that meets the Founder's specifications, employing the React Library and additional frameworks such as Bootstrap, and React-spring. Developing strong technical abilities."
   };
 
-  const expRes : TextCardInfo = {
+  /*const expRes : TextCardInfo = {
     cardTitle:'Resident Assistant',
     cardSubtitle:'Residence Life Staff Team',
     cardDate: '(2024 — present)',
     cardText:"Role will begin in August 2024 "
-  };
+  };*/
 
   const expCoPres : TextCardInfo = {
     cardTitle:'Co-President',
