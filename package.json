@@ -12,7 +12,7 @@
 
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "clean": "rm -rf dist",
+    "clean": "rm -r dist",
     "postdeploy": "npm run clean"
   },
   "dependencies": {
