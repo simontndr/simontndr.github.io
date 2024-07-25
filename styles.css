@@ -16,6 +16,7 @@ body{
     min-height:120vh;
     margin:0;
     position:relative;
+    padding-bottom:140px;
 }
 
 *,*::after,*::before{
@@ -50,7 +51,7 @@ nav{
 }
 
 h1{
-    font-family: 'Archivo Black';
+    font-weight:bold;
     font-size: 80px;
     margin-left:25px;
 }
@@ -80,6 +81,8 @@ footer{
     width:100%;
     text-align:center;
     padding-bottom: 20px;
+    position:absolute;
+    bottom:0;
 }
 
 #contact-info{
@@ -91,11 +94,10 @@ footer{
     margin: 0 10px;
 }
 
-/*vertical phones and tablets*/
+/*vertical phones*/
 @media screen and (min-height:650px){
     main{
         height:70vh;
-        margin:0;
     }
 
     h1{
@@ -122,15 +124,11 @@ footer{
         font-size: 2.5em;
         margin-top:80px;
     }
-
-    #contact-info>li{
-        margin: 0 20px;
-    }
     
 }
 
-/*landscape tablets and portrait ipad pro*/
-@media screen and (min-width:1010px) {
+/*tablets*/
+@media screen and (min-width:750px) {
     h1{
         font-size: 90px;
     }
@@ -154,11 +152,7 @@ footer{
         font-size: 25px;
         margin-top:80px;
     }
-
-    #contact-info>li{
-        margin: 0 20px;
-    }
-    
+   
 }
 
 /*desktop*/
@@ -170,9 +164,4 @@ footer{
     main{
         margin-top:80px;
     }
-}
-
-footer{
-    position:absolute;
-    bottom:0;
 }
