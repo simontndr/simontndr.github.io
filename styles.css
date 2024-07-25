@@ -34,6 +34,10 @@ a{
     color:#FAF9F6;
 }
 
+li{
+    font-size: clamp(20px,1.75vh,100px);
+}
+
 nav{
     padding-top:20px;
     padding-left:35px;
@@ -55,10 +59,6 @@ h1{
 
 h2{
     font-size: clamp(25px,2.25vh,100px);
-}
-
-li{
-    font-size: clamp(20px,1.75vh,100px);
 }
 
 #subtitle{
@@ -88,7 +88,3 @@ footer{
 #contact-info>li{
     margin: 0 1vw;
 }
-
-/*
-@media screen and (orientation:landscape){
-}*/
