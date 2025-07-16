@@ -1,0 +1,51 @@
+.stretchy-image {
+  animation: stretchOnce 5s ease-out infinite;
+}
+
+@keyframes stretchOnce {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+  20% {
+    transform: scaleX(1.25) scaleY(0.7);
+  }
+
+  25% {
+    transform: scaleX(0.9) scaleY(1.4);
+  }
+
+  35% {
+    transform: scaleX(1.05) scaleY(0.98);
+  }
+
+  40% {
+    transform: scaleX(0.99) scaleY(1.01);
+  }
+
+  60% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+  100% {
+    transform: scaleX(1) scaleY(1); /* Stall at final frame */
+  }
+}
+
+.bobbing-image {
+    animation: bobUpDown 2s ease-in-out infinite;
+}
+
+@keyframes bobUpDown{
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-20px);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+}

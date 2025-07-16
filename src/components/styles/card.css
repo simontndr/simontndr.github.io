@@ -1,0 +1,8 @@
+.custom-card {
+    border: 20px solid blue;
+    border-image-source: url('../../assets/full_lace_border.png');
+    border-image-slice: 90;
+    border-image-width: 40px;
+    border-image-repeat: repeat;
+    border-image-outset: 25px;
+}

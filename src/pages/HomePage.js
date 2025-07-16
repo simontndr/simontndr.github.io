@@ -1,0 +1,129 @@
+import Navbar from "../components/Navbar";
+import heroBg from "../assets/transp-home-hero.png";
+import simonSvg from "../assets/simon.svg";
+import Hero from "../components/Hero";
+import MarqueeTag from "../components/MarqueeTag.js";
+import CardCarousel from "../components/CardCarousel.js";
+import FooterBanner from "../components/FooterBanner.js";
+import Footer from "../components/Footer.js";
+import kpopImage from '../assets/kpop_platform.png';
+import cardamiImage from '../assets/cardami.png';
+import chirpImage from '../assets/chirp.png';
+import discussionBoardImage from '../assets/discussionBoard.png';
+import mbynLabsImage from '../assets/mbynLabs.png';
+import dataAnalysis from '../assets/dataAnalysis.png';
+import FlippingCard from "../components/FlippingCard.js";
+
+const HomePage = () => {
+
+  const kpopLivestream = {
+    imageUrl: kpopImage,
+    imageAlt: 'photo of kpop livestream',
+    cardTitle: 'Kpop Livestreaming Platform',
+    cardSubtitle: '',
+    cardText: "Created to make global fan interactions more accessible through AI integration, this project emphasizes an inclusive UI/UX for multilingual audiences. This project taught me about instrumentation and firestore data security."
+  }
+
+  const cardami = {
+    imageUrl: cardamiImage,
+    imageAlt: 'photo of cardami',
+    cardTitle: 'Cardami',
+    cardSubtitle: 'Best in Web3 - SpurHacks 2025',
+    cardText: "Developed as a game where users complete unique challenges to collect cards, we sought to tackle the youth loneliness crisis through gamification. From designing the cards through Figma, I learned about brand identity, and visual storytelling."
+  }
+
+  const chirp = {
+    imageUrl: chirpImage,
+    imageAlt: 'photo of chirp',
+    cardTitle: 'Chirp',
+    cardSubtitle: 'GDSC Hacks 2025',
+    cardText: "Designed as a task tracker, we wanted to find a playful way to encourage healthy lifestyle changes. This project taught me about SVG animation, as I focused my attention on the creation of our platform's mascot."
+  }
+
+  const discussionBoard = {
+    imageUrl: discussionBoardImage,
+    imageAlt: 'photo of Discussion Board',
+    cardTitle: 'Discussion Board',
+    cardSubtitle: '',
+    cardText: "Exploring social connection, this program allows users to register, create posts, and read entries from others. This project taught me about core object-oriented programming principles such as inheritance and polymorphism."
+  }
+
+  const mybnLabsLanding = {
+    imageUrl: mbynLabsImage,
+    imageAlt: 'photo of mybn Labs Landing Page',
+    cardTitle: 'mybn Labs Landing Page',
+    cardSubtitle: '',
+    cardText: "Designed to introduce company brand and mission, this website focuses on clean visuals, smooth animations, and responsivitity. This project taught me how to use Bootstrap and React to quickly build and iterate upon a production-ready design."
+  }
+
+  const statisticsCanada = {
+    imageUrl: dataAnalysis,
+    imageAlt: 'photo of data analysis',
+    cardTitle: 'Statistics Canada Data Analysis',
+    cardSubtitle: '',
+    cardText: "An agile project exploring correlations of demographic characteristics on employment. This project taught me fundamentals surrounding data cleaning and statistical modelling."
+  }
+
+  const projectInfo = [kpopLivestream, cardami, chirp, discussionBoard, mybnLabsLanding, statisticsCanada];
+
+  return (
+    <div className="min-h-screen flex flex-col items-center justify-center">
+
+    
+    <Hero bgUrl={heroBg} imageUrl={simonSvg} text="welcome to simon's corner." textStyle={'font-courier text-md font-bold md:text-xl text-midnight mb-4'}/>
+    
+    {/* Move navbar outside of padded container */}
+    <Navbar />
+    
+    <div id="about" className="w-full bg-jicama">
+      {/* Content container with padding */}
+      <div  className="flex flex-wrap justify-center items-center my-20">
+
+        <div className="hero-content-images md:w-[50%] flex justify-center items-center mb-6 md:mb-0">
+          <FlippingCard imageSrc={simonSvg} />
+        </div>
+
+        <div className="flex flex-col items-center text-left hero-content-text w-[100%] md:w-[50%] p-8">
+          <div className="lg:w-[80%]">
+            <h2 className="font-syncopate font-bold uppercase text-2xl md:text-3xl text-midnight mb-10">
+              Web&nbsp;Developer. <br/>
+              Business&nbsp;Fan. <br/>
+              Human.
+            </h2>
+            <div className="font-courier text-midnight">
+              <p className="mb-6">
+                My name is <span className="font-bold">Simon Tenedero</span> - a third-year <span className="font-bold">software engineering co-op </span>student at the <span className="font-bold">University of Guelph</span> passionate about the intersection between technology, business and community building. 
+                Guided by these interests, I approach problem-solving through an interdisciplinary lens that emphasizes both innovation and human connection. 
+                When I’m not working, I enjoy exploring local trails, meeting new people and expanding my toy collection. 
+              </p>
+              <p>
+                I’ve previously worked for the <span className="font-bold">School of Computer Science (SoCS)</span> as a <span className="font-bold">Research Assistant</span> and <span className="font-bold">Teaching Assistant</span>, 
+                roles which inform my love for problem-solving and collaborating on diverse teams. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <MarqueeTag />
+    </div>
+
+    
+
+
+    <div id="projects" className="my-20 w-full">
+      <h2 className="font-syncopate font-bold uppercase my-20 text-2xl md:text-3xl text-midnight mb-10">
+        Projects
+      </h2>
+      <CardCarousel cardsInfo={projectInfo} />
+    </div>
+
+    <FooterBanner />
+
+    <Footer topRef={"/#homeTop"}/>
+
+    </div>
+  ); 
+}
+
+export default HomePage;
