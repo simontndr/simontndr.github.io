@@ -116,7 +116,7 @@ const HomePage = () => {
       <MarqueeTag />
     </div>
 
-    <div className="bg-jicama">
+    <div className="bg-jicama w-full">
       <div id="projects" className="my-20 w-full">
         <h2 className="font-syncopate font-bold uppercase my-20 text-2xl md:text-3xl text-midnight mb-10">
           Projects

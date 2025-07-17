@@ -37,7 +37,7 @@ const JourneyPage = () => {
   const residenceAssistant = {
     jobTitle: "Residence Assistant",
     company: "Student Housing Services, UofG",
-    startDate: "September 2024",
+    startDate: "August 2024",
     endDate: "April 2025",
     description: "As a Residence Assistant, I supported student well-being through building an inclusive community and serving as a reliable point of contact during conflicts and emergencies. I learned how to lead with empathy, manage responsibilities under pressure, and plan events that brought people together. This role deepened my commitment to fostering safe, welcoming spaces for others.",
     photoUrl: House,
