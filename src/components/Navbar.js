@@ -15,6 +15,8 @@ const Navbar = () => {
 
   const location = useLocation();
 
+  const homeLink = location.pathname === '/' ? "#homeTop" : "/#homeTop";
+
   const menuItems = [
     { name: "about", to: location.pathname==="/" ? "#about" : "/#about" },
     { name: "projects", to: location.pathname==="/" ? "#projects" : "/#projects" },
@@ -35,7 +37,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center p-3">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link to={'/'}>
+              <Link to={homeLink}>
                 <img src={Logo} alt="Logo" className="w-[150px] md:w-[200px] mr-auto" />
               </Link>
             </div>
@@ -95,7 +97,7 @@ const Navbar = () => {
             {/* Logo in mobile menu */}
             <div className="flex items-center justify-between px-6 py-4 border-b border-midnight">
 
-              <Link to={'/'}>
+              <Link to={homeLink}>
                 <img src={Logo} alt="Logo" className="w-[150px] md:w-[200px] mr-auto" />
               </Link>
 

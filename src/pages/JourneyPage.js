@@ -7,10 +7,10 @@ import FooterBanner from '../components/FooterBanner';
 import Footer from '../components/Footer';
 import journeyBg from '../assets/journeyHero.png';
 
-import DuckSvg from '../assets/duck.svg';
-import House from '../assets/house.svg';
-import Sheep from '../assets/sheep.svg';
-import PhotoCard from '../assets/photoCard.svg';
+import Duck from '../assets/duck.png';
+import House from '../assets/house.png';
+import Sheep from '../assets/sheep.png';
+import PhotoCard from '../assets/photoCard.png';
 
 const JourneyPage = () => {
 
@@ -50,7 +50,7 @@ const JourneyPage = () => {
     startDate: "May 2024",
     endDate: "August 2024",
     description: "As a Software Engineering Intern, I collaborated with stakeholders to design a responsive landing page that met evolving requirements. I learned how to iterate quickly by wireframing in Figma and refining components based on user feedback. This experience taught me the value of balancing technical feasibility with clean, user-centered design.",
-    photoUrl: DuckSvg,
+    photoUrl: Duck,
     Quote: "As a software developer, sometimes explaining the problem out loud to a duck is all it takes to find the solution."
   };
 

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated as a, useSpringValue } from "@react-spring/web";
-import developerCard from "../assets/developer_card.svg";
+import developerCard from "../assets/developer_card.png";
 import simonSvg from "../assets/simon.svg";
-import sonnySvg from "../assets/sonny.svg";
-import calicoSvg from "../assets/calico.svg";
-import marbleSvg from "../assets/marble.svg";
+import sonny from "../assets/sonny.png";
+import calico from "../assets/calico.png";
+import marble from "../assets/marble.png";
 
 const FlippingCard = () => {
   const [flipped, setFlipped] = useState(false);
@@ -54,7 +54,7 @@ const FlippingCard = () => {
 
       {/* Sonny */}
       <a.img
-        src={sonnySvg}
+        src={sonny}
         alt="sonny"
         className="w-[125px] top-5 absolute"
         style={{
@@ -65,7 +65,7 @@ const FlippingCard = () => {
 
       {/* Calico */}
       <a.img
-        src={calicoSvg}
+        src={calico}
         alt="calico"
         className="w-[125px] absolute bottom-5 right-0 z-10"
         style={{
@@ -76,7 +76,7 @@ const FlippingCard = () => {
 
       {/* Calico */}
       <a.img
-        src={marbleSvg}
+        src={marble}
         alt="mable"
         className="w-[80px] absolute bottom-1 right-20 z-20"
         style={{
