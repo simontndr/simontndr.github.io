@@ -2,6 +2,7 @@ import logo from '../assets/logo.png';
 import simonSvg from '../assets/simon.svg';
 import BackUpSvg from '../assets/back-up.svg';
 import './styles/components.css'
+import { Link } from 'react-router-dom';
 
 const Footer = ({topRef}) => {
 
@@ -16,18 +17,18 @@ return (
         <div className="flex flex-col space-y-6">
 
             {/* logo name */}
-            <a href="/"><img src={logo} alt="logo" className="w-[150px] md:w-[200px]"/></a>
+            <Link to="/"><img src={logo} alt="logo" className="w-[150px] md:w-[200px]"/></Link>
 
             <nav className="flex flex-col items-start space-y-3">
-            <a href="/#about" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
+            <Link to="/#about" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
                 About
-            </a>
-            <a href="/#projects" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
+            </Link>
+            <Link to="/#projects" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
                 Projects
-            </a>
-            <a href="/journey" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
+            </Link>
+            <Link to="/journey/#journeyTop" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
                 Journey
-            </a>
+            </Link>
             </nav>
 
             {/* Contact links */}
@@ -35,12 +36,12 @@ return (
             <div className="text-midnight font-courier">
                 stenedero@uoguelph.ca
             </div>
-            <a href="https://www.linkedin.com/in/simontenedero/" target="_blank" rel="noopener noreferrer" className="text-midnight font-courier underline hover:font-bold">
+            <Link to="https://www.linkedin.com/in/simontenedero/" target="_blank" rel="noopener noreferrer" className="text-midnight font-courier underline hover:font-bold">
                 LinkedIn
-            </a>
-            <a href="https://github.com/simontndr" target="_blank" rel="noopener noreferrer" className="text-midnight font-courier underline hover:font-bold">
+            </Link>
+            <Link to="https://github.com/simontndr" target="_blank" rel="noopener noreferrer" className="text-midnight font-courier underline hover:font-bold">
                 GitHub
-            </a>
+            </Link>
             </div>
         </div>
 
@@ -48,9 +49,9 @@ return (
         
     </div>
 
-    <a href={topRef} className="mb-4">
+    <Link to={topRef} className="mb-4">
         <img src={BackUpSvg} alt="back up arrow" className="bobbing-image mb-10 w-[60px] md:w-[70px]"/>
-    </a>
+    </Link>
 
     {/* Bottom section - Copyright */}
     <div className="text-center text-xs text-midnight font-courier">

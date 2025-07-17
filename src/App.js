@@ -12,8 +12,6 @@ function App() {
 
   return (
     <div className="App min-h-screen bg-gradient-to-b from-moon to-asian-pear">
-      {/* Conditionally render navbar */}
-      {location.pathname === '/journey' && <Navbar />}
 
       {/* Scroll to hash behavior on route change */}
       <ScrollToHashElement />

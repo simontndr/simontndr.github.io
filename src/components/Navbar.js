@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Logo from "../assets/logo.png";
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,10 +16,10 @@ const Navbar = () => {
   const location = useLocation();
 
   const menuItems = [
-    { name: "about", href: "/#about" },
-    { name: "projects", href: "/#projects" },
-    { name: "journey", href: "/journey" },
-    { name: "connect", href: location.pathname+"#connect" },
+    { name: "about", to: location.pathname==="/" ? "#about" : "/#about" },
+    { name: "projects", to: location.pathname==="/" ? "#projects" : "/#projects" },
+    { name: "journey", to: "/journey/#journeyTop" },
+    { name: "connect", to: location.pathname+"#connect" },
   ];
 
   return (
@@ -35,22 +35,22 @@ const Navbar = () => {
           <div className="flex justify-between items-center p-3">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <a href={'/'}>
+              <Link to={'/'}>
                 <img src={Logo} alt="Logo" className="w-[150px] md:w-[200px] mr-auto" />
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Menu */}
             <div className="hidden md:block">
               <div className="flex items-baseline space-x-8">
                 {menuItems.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.to}
                     className={`text-midnight hover:underline ${item.name==='connect' ? 'font-bold font-syncopate uppercase text-xs' : 'font-courier'}`}
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -95,9 +95,9 @@ const Navbar = () => {
             {/* Logo in mobile menu */}
             <div className="flex items-center justify-between px-6 py-4 border-b border-midnight">
 
-              <a href={'/'}>
+              <Link to={'/'}>
                 <img src={Logo} alt="Logo" className="w-[150px] md:w-[200px] mr-auto" />
-              </a>
+              </Link>
 
               {/* Close button */}
               <button
@@ -124,14 +124,14 @@ const Navbar = () => {
             <div className="px-6 py-4">
               <div className="space-y-1">
                 {menuItems.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={item.href}
+                    to={item.to}
                     onClick={closeMenu}
                     className="block px-3 py-3 text-base font-medium text-midnight hover:text-white hover:bg-midnight/10 rounded-md transition-colors font-courier"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

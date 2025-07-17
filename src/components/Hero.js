@@ -1,6 +1,6 @@
 import readMoreSvg from "../assets/read-more.svg";
 import './styles/components.css'
-import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Hero = ({id, readMore, text,bgUrl,imageUrl,textStyle}) => {
 
@@ -11,9 +11,9 @@ const Hero = ({id, readMore, text,bgUrl,imageUrl,textStyle}) => {
                 imageUrl && <img src={imageUrl} alt="simon svg" className="stretchy-image w-[300px] md:w-[400px] lg:w-[500px]" />}
             <h1 className={textStyle}>{text}</h1>
             </div>  
-            <a href={readMore} className="mt-4">
+            <Link to={readMore} className="mt-4">
                 <img src={readMoreSvg} alt="read more svg" className="bobbing-image mb-20 w-[70px] md:w-[80px]" />
-            </a>
+            </Link>
         </div>
     );
 }

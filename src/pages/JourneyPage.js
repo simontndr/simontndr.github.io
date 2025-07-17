@@ -1,3 +1,4 @@
+import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import MarqueeTag from '../components/MarqueeTag';
 import WorkExperience from '../components/WorkExperience';
@@ -62,6 +63,8 @@ const JourneyPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">
+
+    <Navbar />
 
     <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={""} text="My Journey" textStyle={'font-syncopate text-4xl font-bold text-midnight uppercase'}/>
 
