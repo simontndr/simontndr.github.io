@@ -25,8 +25,9 @@ const Navbar = () => {
   return (
     <>
       {/* Main Navbar */}
+      
       <nav className={`
-        bg-dawn border-b border-midnight w-full sticky top-0 z-30 
+        bg-dawn border-b border-midnight w-full sticky top-0 z-30
         transition-opacity duration-300 ease-in-out
         ${isMenuOpen ? 'opacity-0 md:opacity-100' : 'opacity-100'}
       `}>
@@ -81,7 +82,7 @@ const Navbar = () => {
       <div className={`fixed inset-0 z-40 md:hidden transition-all duration-300 ${isMenuOpen ? 'visible' : 'invisible'}`}>
         {/* Background overlay */}
         <div
-          className={`fixed inset-0 bg-black transition-opacity duration-300 ${isMenuOpen ? 'bg-opacity-50' : 'bg-opacity-0'}`}
+          className={`fixed inset-0 transition-all duration-300 ${isMenuOpen ? 'bg-black bg-opacity-50' : 'bg-transparent'}`}
           onClick={closeMenu}
         ></div>
 

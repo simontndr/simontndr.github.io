@@ -4,6 +4,7 @@ import BackUpSvg from '../assets/back-up.svg';
 import './styles/components.css'
 
 const Footer = ({topRef}) => {
+
 return (
 
 <footer id="connect" className="w-full bg-gradient-to-b from-dawn to-sky px-8 pt-20 pb-5 flex flex-col items-center justify-between border-t border-midnight">
@@ -15,16 +16,16 @@ return (
         <div className="flex flex-col space-y-6">
 
             {/* logo name */}
-            <a href="/"><img src={logo} className="w-[150px] md:w-[200px]"/></a>
+            <a href="/"><img src={logo} alt="logo" className="w-[150px] md:w-[200px]"/></a>
 
             <nav className="flex flex-col items-start space-y-3">
-            <a href="#about" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl">
+            <a href="/#about" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
                 About
             </a>
-            <a href="#projects" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl">
+            <a href="/#projects" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
                 Projects
             </a>
-            <a href="/journey" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl">
+            <a href="/journey" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
                 Journey
             </a>
             </nav>
@@ -34,10 +35,10 @@ return (
             <div className="text-midnight font-courier">
                 stenedero@uoguelph.ca
             </div>
-            <a href="https://www.linkedin.com/in/simontenedero/" className="text-midnight font-courier underline">
+            <a href="https://www.linkedin.com/in/simontenedero/" target="_blank" rel="noopener noreferrer" className="text-midnight font-courier underline hover:font-bold">
                 LinkedIn
             </a>
-            <a href="https://github.com/simontndr" className="text-midnight font-courier underline">
+            <a href="https://github.com/simontndr" target="_blank" rel="noopener noreferrer" className="text-midnight font-courier underline hover:font-bold">
                 GitHub
             </a>
             </div>

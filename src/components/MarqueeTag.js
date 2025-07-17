@@ -2,6 +2,7 @@ import Marquee from "react-fast-marquee";
 import marqueeStar from "../assets/marqueeStar.svg";
 
 const MarqueeTag = () => {
+
   return (
     <div className="marquee border-b-2 border-t-2 border-midnight pb-0.5">
       <Marquee gradient={false} speed={50}>

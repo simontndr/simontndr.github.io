@@ -5,11 +5,13 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 const fixSingleCardLen = (cardsInfo) => {
     while(cardsInfo.length < 2){
         let dataTemp = {
-            imageUrl:'https://www.horizonplant.com/wp-content/uploads/2017/05/placeholder-400x400.png',
+            imageUrl:'',
+            readMoreUrl: '#',
             imageAlt:'placeholder alt',
             cardTitle:'placeholder title',
             cardSubtitle: 'placeholder subtitle',
-            cardText:'placeholder text'
+            cardText:'placeholder text',
+            techUsed: []
         }
         cardsInfo.push(dataTemp);
     }
@@ -26,10 +28,12 @@ const SingleCardCarousel = ({cardsInfo}) => {
             <div className='single-cards-wrapper flex justify-around items-center h-[600px]'>
                 <Card
                 imageUrl={cardInfo.imageUrl}
+                readMoreUrl={cardInfo.readMoreUrl}
                 imageAlt={cardInfo.imageAlt}
                 cardTitle={cardInfo.cardTitle}
                 cardSubtitle={cardInfo.cardSubtitle}
                 cardText={cardInfo.cardText}
+                techUsed={cardInfo.techUsed}
                 />
             </div>
         </div>

@@ -21,23 +21,28 @@ const HomePage = () => {
     imageAlt: 'photo of kpop livestream',
     cardTitle: 'Kpop Livestreaming Platform',
     cardSubtitle: '',
-    cardText: "Created to make global fan interactions more accessible through AI integration, this project emphasizes an inclusive UI/UX for multilingual audiences. This project taught me about instrumentation and firestore data security."
+    cardText: "Created to make global fan interactions more accessible through AI integration, this project emphasizes an inclusive UI/UX for multilingual audiences. This project taught me about instrumentation and firestore data security.",
+    techUsed: ['React', 'Firebase', 'Axios', 'Express.js', 'API Integration',]
   }
 
   const cardami = {
     imageUrl: cardamiImage,
+    readMoreUrl: 'https://devpost.com/software/cardami',
     imageAlt: 'photo of cardami',
     cardTitle: 'Cardami',
     cardSubtitle: 'Best in Web3 - SpurHacks 2025',
-    cardText: "Developed as a game where users complete unique challenges to collect cards, we sought to tackle the youth loneliness crisis through gamification. From designing the cards through Figma, I learned about brand identity, and visual storytelling."
+    cardText: "Developed as a game where users complete unique challenges to collect cards, we sought to tackle the youth loneliness crisis through gamification. From designing the cards through Figma, I learned about brand identity, and visual storytelling.",
+    techUsed: ['React', 'Javascript', 'Firebase', 'Tailwind CSS', 'React-Spring',]
   }
 
   const chirp = {
     imageUrl: chirpImage,
+    readMoreUrl: 'https://devpost.com/software/chirp-habit-tracker',
     imageAlt: 'photo of chirp',
     cardTitle: 'Chirp',
     cardSubtitle: 'GDSC Hacks 2025',
-    cardText: "Designed as a task tracker, we wanted to find a playful way to encourage healthy lifestyle changes. This project taught me about SVG animation, as I focused my attention on the creation of our platform's mascot."
+    cardText: "Designed as a task tracker, we wanted to find a playful way to encourage healthy lifestyle changes. This project taught me about SVG animation, as I focused my attention on the creation of our platform's mascot.",
+    techUsed: ['React', 'Javascript','GSAP','ngrok','Google API'],
   }
 
   const discussionBoard = {
@@ -45,7 +50,8 @@ const HomePage = () => {
     imageAlt: 'photo of Discussion Board',
     cardTitle: 'Discussion Board',
     cardSubtitle: '',
-    cardText: "Exploring social connection, this program allows users to register, create posts, and read entries from others. This project taught me about core object-oriented programming principles such as inheritance and polymorphism."
+    cardText: "Exploring social connection, this program allows users to register, create posts, and read entries from others. This project taught me about core object-oriented programming principles such as inheritance and polymorphism.",
+    techUsed: ['Java','OOP','Swing']
   }
 
   const mybnLabsLanding = {
@@ -53,7 +59,8 @@ const HomePage = () => {
     imageAlt: 'photo of mybn Labs Landing Page',
     cardTitle: 'mybn Labs Landing Page',
     cardSubtitle: '',
-    cardText: "Designed to introduce company brand and mission, this website focuses on clean visuals, smooth animations, and responsivitity. This project taught me how to use Bootstrap and React to quickly build and iterate upon a production-ready design."
+    cardText: "Designed to introduce company brand and mission, this website focuses on clean visuals, smooth animations, and responsivitity. This project taught me how to use Bootstrap and React to quickly build and iterate upon a production-ready design.",
+    techUsed: ['React','TypeScript','CSS','Bootstrap',]
   }
 
   const statisticsCanada = {
@@ -61,21 +68,22 @@ const HomePage = () => {
     imageAlt: 'photo of data analysis',
     cardTitle: 'Statistics Canada Data Analysis',
     cardSubtitle: '',
-    cardText: "An agile project exploring correlations of demographic characteristics on employment. This project taught me fundamentals surrounding data cleaning and statistical modelling."
+    cardText: "Exploring correlations of demographic characteristics on employment. This project taught me fundamentals surrounding data cleaning and statistical modelling.",
+    techUsed: ['Python','Pandas','MatPlotLib','Seaborn']
   }
 
   const projectInfo = [kpopLivestream, cardami, chirp, discussionBoard, mybnLabsLanding, statisticsCanada];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
+    <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">
 
     
-    <Hero bgUrl={heroBg} imageUrl={simonSvg} text="welcome to simon's corner." textStyle={'font-courier text-md font-bold md:text-xl text-midnight mb-4'}/>
+    <Hero id="homeTop" readMore="#about" bgUrl={heroBg} imageUrl={simonSvg} text="welcome to simon's corner." textStyle={'font-courier text-md font-bold md:text-xl text-midnight mb-4'}/>
     
     {/* Move navbar outside of padded container */}
     <Navbar />
     
-    <div id="about" className="w-full bg-jicama">
+    <div id="about" className="w-full">
       {/* Content container with padding */}
       <div  className="flex flex-wrap justify-center items-center my-20">
 
@@ -108,17 +116,17 @@ const HomePage = () => {
       <MarqueeTag />
     </div>
 
-    
+    <div className="bg-jicama">
+      <div id="projects" className="my-20 w-full">
+        <h2 className="font-syncopate font-bold uppercase my-20 text-2xl md:text-3xl text-midnight mb-10">
+          Projects
+        </h2>
+        <CardCarousel cardsInfo={projectInfo} />
+      </div>
 
-
-    <div id="projects" className="my-20 w-full">
-      <h2 className="font-syncopate font-bold uppercase my-20 text-2xl md:text-3xl text-midnight mb-10">
-        Projects
-      </h2>
-      <CardCarousel cardsInfo={projectInfo} />
+      <FooterBanner />
     </div>
-
-    <FooterBanner />
+    
 
     <Footer topRef={"/#homeTop"}/>
 

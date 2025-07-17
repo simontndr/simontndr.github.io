@@ -4,11 +4,13 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/16/solid';
 const fixCardLen = (cardsInfo) => {
     while(cardsInfo.length % 3 !== 0 || cardsInfo.length < 6){
         let dataTemp = {
-            imageUrl:'https://www.horizonplant.com/wp-content/uploads/2017/05/placeholder-400x400.png',
+            imageUrl:'',
+            readMoreUrl: '#',
             imageAlt:'placeholder alt',
             cardTitle:'placeholder title',
             cardSubtitle: 'placeholder subtitle',
-            cardText:'placeholder text'
+            cardText:'placeholder text',
+            techUsed: []
         }
         cardsInfo.push(dataTemp);
     }
@@ -29,10 +31,12 @@ const TripleCardCarousel = ({cardsInfo}) => {
                             <div className='col-md-4' key={`${i}-${index}`}>
                                 <Card
                                     imageUrl={cardInfo.imageUrl}
+                                    readMoreUrl={cardInfo.readMoreUrl}
                                     imageAlt={cardInfo.imageAlt}
                                     cardTitle={cardInfo.cardTitle}
                                     cardSubtitle={cardInfo.cardSubtitle}
                                     cardText={cardInfo.cardText}
+                                    techUsed={cardInfo.techUsed}
                                 />
                             </div>
                         ))}

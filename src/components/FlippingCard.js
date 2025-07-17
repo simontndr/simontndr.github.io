@@ -4,14 +4,14 @@ import developerCard from "../assets/developer_card.svg";
 import simonSvg from "../assets/simon.svg";
 import sonnySvg from "../assets/sonny.svg";
 import calicoSvg from "../assets/calico.svg";
+import marbleSvg from "../assets/marble.svg";
 
 const FlippingCard = () => {
   const [flipped, setFlipped] = useState(false);
-  const flipDuration = 500;
+  const flipDuration = 450;
 
   // === Bobbing springs using useSpringValue for persistence
-  const sonnyY = useSpringValue(0);
-  const calicoY = useSpringValue(0);
+  const posY = useSpringValue(0);
 
   // Start bobbing animations on mount
   useEffect(() => {
@@ -34,9 +34,8 @@ const FlippingCard = () => {
       animate();
     };
 
-    startBobbing(sonnyY);
-    startBobbing(calicoY);
-  }, [sonnyY, calicoY]);
+    startBobbing(posY);
+  }, [posY]);
 
   // === Card flip spring
   const { transform, frontOpacity, backOpacity } = useSpring({
@@ -51,15 +50,15 @@ const FlippingCard = () => {
   };
 
   return (
-    <div className="relative w-[340px] h-[460px] p-2">
+    <div className="relative w-[340px] h-[460px]">
 
       {/* Sonny */}
       <a.img
         src={sonnySvg}
         alt="sonny"
-        className="w-[125px] absolute"
+        className="w-[125px] top-5 absolute"
         style={{
-          transform: sonnyY.to((y) => `translateY(${y}px)`),
+          transform: posY.to((y) => `translateY(${y}px)`),
           transformOrigin: "top left",
         }}
       />
@@ -68,16 +67,27 @@ const FlippingCard = () => {
       <a.img
         src={calicoSvg}
         alt="calico"
-        className="w-[125px] absolute bottom-0 right-0 z-10"
+        className="w-[125px] absolute bottom-5 right-0 z-10"
         style={{
-          transform: calicoY.to((y) => `translateY(${y}px)`),
+          transform: posY.to((y) => `translateY(${y}px)`),
+          transformOrigin: "bottom right",
+        }}
+      />
+
+      {/* Calico */}
+      <a.img
+        src={marbleSvg}
+        alt="mable"
+        className="w-[80px] absolute bottom-1 right-20 z-20"
+        style={{
+          transform: posY.to((y) => `translateY(${y}px)`),
           transformOrigin: "bottom right",
         }}
       />
 
       {/* Flip Card */}
       <div
-        className="w-[220px] h-[310px] cursor-pointer absolute top-[90px] left-[60px]"
+        className="rotate-[-8deg] w-[220px] h-[310px] cursor-pointer absolute top-[90px] left-[80px]"
         onClick={handleFlip}
       >
         {/* Front */}
@@ -115,6 +125,7 @@ const FlippingCard = () => {
         </a.div>
       </div>
     </div>
+
   );
 };
 

@@ -1,25 +1,28 @@
 import React from 'react';
-import { Routes, Route, useLocation} from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import JourneyPage from './pages/JourneyPage'; // Assuming you have a JourneyPage component
-import NotFoundPage from './pages/NotFoundPage'; // Assuming you have a NotFoundPage component
+import JourneyPage from './pages/JourneyPage';
+import NotFoundPage from './pages/NotFoundPage';
 import Navbar from './components/Navbar';
+import ScrollToHashElement from './components/ScrollToHashElement';
 import './App.css';
 
-
 function App() {
-
   const location = useLocation();
 
   return (
     <div className="App min-h-screen bg-gradient-to-b from-moon to-asian-pear">
-      {/* Main content area */}
-      {location.pathname!=='/' && <Navbar />}
+      {/* Conditionally render navbar */}
+      {location.pathname === '/journey' && <Navbar />}
+
+      {/* Scroll to hash behavior on route change */}
+      <ScrollToHashElement />
+
+      {/* Main routing */}
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/journey" element={<JourneyPage />} />   
-          {/* Catch all route for 404 */}
+          <Route path="/journey" element={<JourneyPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
