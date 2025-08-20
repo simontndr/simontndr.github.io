@@ -77,7 +77,6 @@ const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">
 
-    
     <Hero id="homeTop" readMore="#about" bgUrl={heroBg} imageUrl={simonSvg} text="welcome to simon's corner." textStyle={'font-courier text-md font-bold md:text-xl text-midnight mb-4'}/>
     
     {/* Move navbar outside of padded container */}
@@ -87,13 +86,14 @@ const HomePage = () => {
       {/* Content container with padding */}
       <div  className="flex flex-wrap justify-center items-center my-20">
 
-        <div className="hero-content-images md:w-[50%] flex justify-center items-center mb-6 md:mb-0">
+        <div className="hero-content-images md:w-[50%] flex justify-center items-center mb-6 md:mb-0 relative">
+          <div className="bg-jicama h-[330px] w-[330px] absolute top-[15%] rounded-full shadow-inner"></div>
           <FlippingCard imageSrc={simonSvg} />
         </div>
 
-        <div className="flex flex-col items-center text-left hero-content-text w-[100%] md:w-[50%] p-8">
+        <div className="flex flex-col items-center text-left hero-content-text w-[100%] md:w-[50%] px-8 py-10">
           <div className="lg:w-[80%]">
-            <h2 className="font-syncopate font-bold uppercase text-2xl md:text-3xl text-midnight mb-10">
+            <h2 className="font-syncopate font-bold text-2xl md:text-3xl lg:text-4xl text-midnight mb-10 uppercase">
               Web&nbsp;Developer. <br/>
               Business&nbsp;Fan. <br/>
               Human.
@@ -117,10 +117,10 @@ const HomePage = () => {
     </div>
 
     <div className="bg-jicama w-full">
-      <div id="projects" className="my-20 w-full">
-        <h2 className="font-syncopate font-bold uppercase my-20 text-2xl md:text-3xl text-midnight mb-10">
+      <div id="projects" className="md:py-20 w-full">
+        <h3 className="font-syncopate uppercase text-2xl md:text-3xl text-midnight my-20">
           Projects
-        </h2>
+        </h3>
         <CardCarousel cardsInfo={projectInfo} />
       </div>
 

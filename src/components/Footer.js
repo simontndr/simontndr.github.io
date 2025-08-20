@@ -23,13 +23,13 @@ const Footer = ({topRef}) => {
                 <Link to={homeLink}><img src={logo} alt="logo" className="w-[150px] md:w-[200px]"/></Link>
 
                 <nav className="flex flex-col items-start space-y-3">
-                <Link to="/#about" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
+                <Link to="/#about" className="text-midnight font-syncopate font-bold text-lg lg:text-2xl hover:underline">
                     About
                 </Link>
-                <Link to="/#projects" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
+                <Link to="/#projects" className="text-midnight font-syncopate font-bold text-lg lg:text-2xl hover:underline">
                     Projects
                 </Link>
-                <Link to="/journey/#journeyTop" className="text-midnight font-syncopate uppercase font-semibold text-lg lg:text-2xl hover:underline">
+                <Link to="/journey/#journeyTop" className="text-midnight font-syncopate font-bold text-lg lg:text-2xl hover:underline">
                     Journey
                 </Link>
                 </nav>

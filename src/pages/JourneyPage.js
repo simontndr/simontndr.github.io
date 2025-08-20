@@ -29,7 +29,7 @@ const JourneyPage = () => {
     company: "School of Computer Science, UofG",
     startDate: "January 2025",
     endDate: "April 2025",
-    description: "As a Teaching Assistant I supported students through weekly labs, code reviews, and project troubleshooting. I learned how to explain abstract design principles clearly and give actionable feedback on object-oriented code. Something I valued in this role was helping students build confidence in their technical and problem-solving skills.",
+    description: "As a Teaching Assistant I supported students through weekly labs, code reviews, and project troubleshooting. I learned how to explain abstract design principles clearly and give actionable feedback on python data analysis algorithms. Something I valued in this role was helping students build confidence in their technical and problem-solving skills.",
     photoUrl: Sheep,
     Quote: "As a teaching assistant, I wanted to be like a stuffed animal - there for unyielding support and reliability"
   };
@@ -66,12 +66,12 @@ const JourneyPage = () => {
 
     <Navbar />
 
-    <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={""} text="My Journey" textStyle={'font-syncopate text-4xl font-bold text-midnight uppercase'}/>
+    <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={""} text="My Journey" textStyle={'font-syncopate text-4xl lg:text-5xl font-bold text-midnight'}/>
 
     <div id="overview" className="flex flex-col items-center justify-center w-full pt-20">
       <div className="md:w-[60%] px-8">
-        <h2 className="text-2xl font-bold text-midnight font-syncopate uppercase mb-10">Overview</h2>
-        <div className="text-midnight font-courier text-left mb-20">
+        <h2 className="text-2xl md:text-3xl font-bold text-midnight font-syncopate mb-10 uppercase">Overview</h2>
+        <div className="text-midnight font-courier text-left mb-[140px]">
           <p className="mb-6">
           Each work experience I’ve had has helped shape my skills, mindset, and sense of purpose. Whether I was leading a team, supporting students, or building software, every role has taught me something valuable. I’m especially thankful for the mentors who challenged and supported me, and for the teammates who turned work into a space for connection, learning, and growth.
           </p>
@@ -85,7 +85,7 @@ const JourneyPage = () => {
 
     <div className="work-experience bg-jicama w-full py-20">
       
-      <h2 className="text-2xl font-bold text-midnight font-syncopate uppercase mb-10">Roles</h2>
+      <h3 className="text-2xl md:text-3xl text-midnight font-syncopate uppercase mb-10">Roles</h3>
 
       {workExperiences.map((experience, index) => (
         <WorkExperience
@@ -105,8 +105,8 @@ const JourneyPage = () => {
     <div className="leadership w-full flex flex-col justify-center items-center">
       <MarqueeTag/>
 
-      <div className="py-20">
-        <h2 className="text-2xl font-bold text-midnight font-syncopate uppercase mb-10">Leadership</h2>
+      <div className="py-[125px]">
+        <h3 className="text-2xl md:text-3xl text-midnight font-syncopate mb-10 uppercase">Leadership</h3>
         <LeadershipList/>
       </div>
 
