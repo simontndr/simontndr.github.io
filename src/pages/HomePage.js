@@ -13,6 +13,8 @@ import discussionBoardImage from '../assets/discussionBoard.png';
 import mbynLabsImage from '../assets/mbynLabs.png';
 import dataAnalysis from '../assets/dataAnalysis.png';
 import FlippingCard from "../components/FlippingCard.js";
+import { Link } from 'react-router-dom';
+import '../components/styles/movingBorder.css'
 
 const HomePage = () => {
 
@@ -30,7 +32,7 @@ const HomePage = () => {
     readMoreUrl: 'https://devpost.com/software/cardami',
     imageAlt: 'photo of cardami',
     cardTitle: 'Cardami',
-    cardSubtitle: 'Best in Web3 - SpurHacks 2025',
+    cardSubtitle: 'Best Web3 - SpurHacks 2025',
     cardText: "Developed as a game where users complete unique challenges to collect cards, we sought to tackle the youth loneliness crisis through gamification. From designing the cards through Figma, I learned about brand identity, and visual storytelling.",
     techUsed: ['React', 'Javascript', 'Firebase', 'Tailwind CSS', 'React-Spring',]
   }
@@ -86,9 +88,16 @@ const HomePage = () => {
       {/* Content container with padding */}
       <div  className="flex flex-wrap justify-center items-center my-20">
 
-        <div className="hero-content-images md:w-[50%] flex justify-center items-center mb-6 md:mb-0 relative">
+        <div className="hero-content-images md:w-[50%] flex flex-col justify-center items-center mb-6 md:mb-0 relative">
           <div className="bg-jicama h-[330px] w-[330px] absolute top-[15%] rounded-full shadow-inner"></div>
           <FlippingCard imageSrc={simonSvg} />
+
+          {/* Contacts */}
+          <div className="flex mt-2 rounded-full bg-gray-200 moving-border">
+              <Link to={'#connect'} className="bg-dawn m-1 px-4 py-1 text-sm rounded-full text-midnight font-bold uppercase font-syncopate">
+                Connect
+              </Link>
+            </div>
         </div>
 
         <div className="flex flex-col items-center text-left hero-content-text w-[100%] md:w-[50%] px-8 py-10">
@@ -98,16 +107,27 @@ const HomePage = () => {
               Business&nbsp;Fan. <br/>
               Human.
             </h2>
+
             <div className="font-courier text-midnight">
+
               <p className="mb-6">
                 My name is <span className="font-bold">Simon Tenedero</span> - a third-year <span className="font-bold">software engineering co-op </span>student at the <span className="font-bold">University of Guelph</span> passionate about the intersection between technology, business and community building. 
                 Guided by these interests, I approach problem-solving through an interdisciplinary lens that emphasizes both innovation and human connection. 
                 When I’m not working, I enjoy exploring local trails, meeting new people and expanding my toy collection. 
               </p>
-              <p>
-                I’ve previously worked for the <span className="font-bold">School of Computer Science (SoCS)</span> as a <span className="font-bold">Research Assistant</span> and <span className="font-bold">Teaching Assistant</span>, 
-                roles which inform my love for problem-solving and collaborating on diverse teams. 
-              </p>
+              
+              <h4 className="font-syncopate font-bold text-md  text-midnight mt-10 mb-6 uppercase">
+              Highlights
+              </h4>
+
+              <ul className="list-disc list-outside space-y-1">
+                <li>Web App Dev @Kenna (Current) </li>
+                <li>Research Assistant @CCMPS (S25)</li>
+                <li>Software Design TA @CCMPS (W25)</li>
+                <li>Residence Assistant @SHS (F24&W25)</li>
+                <li>Best Web3 @Spurhacks&nbsp;'25</li>
+              </ul>
+
             </div>
           </div>
         </div>

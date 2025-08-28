@@ -30,7 +30,6 @@ module.exports = {
         'midnight': '#081F5C',
         'dawn': '#D0E3FF',
         'jicama': '#FFF9F0',
-        'midnight': '#081F5C',
         'sky': '#BAD6EB',
     },
   },

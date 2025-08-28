@@ -130,7 +130,7 @@ const Navbar = () => {
                     key={item.name}
                     to={item.to}
                     onClick={closeMenu}
-                    className="block px-3 py-3 text-base font-medium text-midnight hover:text-white hover:bg-midnight/10 rounded-md transition-colors font-courier"
+                     className={`block  mb-4 text-midnight hover:underline ${item.name==='connect' ? 'font-bold font-syncopate uppercase text-xs mt-1' : 'font-courier'}`}
                   >
                     {item.name}
                   </Link>
