@@ -101,7 +101,7 @@ const JourneyPage = () => {
 
     <div className="work-experience bg-jicama w-full py-20">
       
-      <h3 className="text-2xl md:text-3xl text-midnight font-syncopate uppercase mb-10">Roles</h3>
+      <h3 className="text-2xl md:text-3xl text-midnight font-syncopate uppercase mb-10">Roles ✦</h3>
 
       {workExperiences.map((experience, index) => (
         <WorkExperience
@@ -124,7 +124,7 @@ const JourneyPage = () => {
       <MarqueeTag/>
 
       <div className="py-[125px]">
-        <h3 className="text-2xl md:text-3xl text-midnight font-syncopate mb-10 uppercase">Leadership</h3>
+        <h3 className="text-2xl md:text-3xl text-midnight font-syncopate mb-10 uppercase">Leadership ✦</h3>
         <LeadershipList/>
       </div>
 

@@ -111,17 +111,17 @@ const HomePage = () => {
             <div className="font-courier text-midnight">
 
               <p className="mb-6">
-                My name is <span className="font-bold">Simon Tenedero</span> - a third-year <span className="font-bold">software engineering co-op </span>student at the <span className="font-bold">University of Guelph</span> passionate about the intersection between technology, business and community building. 
+                My name is <span className="font-bold">Simon Tenedero</span> - a third-year <span className="font-bold">software engineering co-op</span> student at the <span className="font-bold">University of Guelph</span> passionate about the intersection between technology, business and community building. 
                 Guided by these interests, I approach problem-solving through an interdisciplinary lens that emphasizes both innovation and human connection. 
                 When I’m not working, I enjoy exploring local trails, meeting new people and expanding my toy collection. 
               </p>
               
-              <h4 className="font-syncopate font-bold text-md  text-midnight mt-10 mb-6 uppercase">
+              <h4 className="font-syncopate font-bold text-md  text-midnight mt-10 mb-3 uppercase">
               Highlights
               </h4>
 
-              <ul className="list-disc list-outside space-y-1">
-                <li>Web App Dev @Kenna (Current) </li>
+              <ul className="list-disc list-outside space-y-1 pl-4">
+                <li className="font-bold">Web App Dev @Kenna (Current) </li>
                 <li>Research Assistant @CCMPS (S25)</li>
                 <li>Software Design TA @CCMPS (W25)</li>
                 <li>Residence Assistant @SHS (F24&W25)</li>
@@ -139,7 +139,7 @@ const HomePage = () => {
     <div className="bg-jicama w-full">
       <div id="projects" className="md:py-20 w-full">
         <h3 className="font-syncopate uppercase text-2xl md:text-3xl text-midnight my-20">
-          Projects
+          Projects ✦
         </h3>
         <CardCarousel cardsInfo={projectInfo} />
       </div>
