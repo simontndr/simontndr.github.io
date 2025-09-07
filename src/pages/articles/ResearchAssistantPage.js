@@ -74,8 +74,8 @@ const ResearchAssistantPage = () => (
               tools such as Trello.
             </p>
             <p>
-              Building upon an existing codebase inherited by a previous Research Assistant called for 
-              adaptability, as I taught myself unfamiliar tools part of the existing tech stack. I also 
+              Building upon an existing codebase inherited from a previous researcher called for 
+              adaptability and persistence, as I taught myself unfamiliar tools that were part of the existing tech stack. I also 
               had to read through documentation and system diagrams to understand the existing architecture 
               and areas which required further development.
             </p>
@@ -122,7 +122,7 @@ const ResearchAssistantPage = () => (
               process of obtaining a Masters/Doctorate. Candidates must identify a research gap, come up 
               with their own thesis, and formulate associated questions they seek to answer, and finally - 
               figure out how they will answer these questions. It is an intensive process, which made me 
-              truly admire the work that is being done by the School of Computer Science.
+              truly admire the work that is being done at the School of Computer Science.
             </p>
           </div>
 
@@ -144,9 +144,15 @@ const ResearchAssistantPage = () => (
               </h4>
               <p className="text-gray-700">
                 From intentionally allocating time each week to exploring documentation and video tutorials, 
-                I gained more confidence in my ability to code independently without constant intervention 
-                from teammates. I learned how to learn through active recall and teaching team members, 
-                which forces you to simplify and focus on key concepts.
+                I gained more confidence in my ability to code independently without constant intervention from teammates. 
+                Although I naturally continued to seek feedback, as the term progressed, 
+                I became more reliable - given team members felt more at ease designating tasks for me to complete on my own. 
+                Moreover, from repeatedly learning new techniques and strategies related to these tools, 
+                I learned how to learn! Some of the tips I found most helpful when digesting new knowledge included active recall 
+                (i.e. trying to summarize new knowledge from memory through writing it as notes or reciting it out loud), 
+                and teaching team members - which forces you to simplify and focus on the key concepts. 
+                Relating to the latter strategy, I had a lot of opportunity to do so during our Friday meetings! 
+                From routinely sharing these takeaways, I not only reinforced my own learning, but helped everyone on our team increase their knowledge as well.
               </p>
             </div>
 
@@ -156,11 +162,15 @@ const ResearchAssistantPage = () => (
                 Strengthen UI/UX Design Intuition
               </h4>
               <p className="text-gray-700">
-                Through consistent observation and reflection on interface patterns in popular web 
-                applications, I gained extensive exposure to common UI/UX principles. I realized that 
-                great UI/UX design is often taken for granted because well-thought-out interfaces are 
-                intuitive. However, UI/UX is ultimately human-centred, and real validation comes from 
-                user feedback during testing.
+                Through my action plan, I was able to gain extensive exposure to common UI/UX principles and consequently apply it 
+                to the ongoing research project for this role. This learning goal really pushed my analytical skills, 
+                as I intentionally slowed down to observe and reflect on what makes these popular websites so successful. 
+                I came to realize that great UI/UX design is often taken for granted! 
+                This is because well-thought-out interfaces are intuitive - you don’t need to think when using them; 
+                it almost becomes second nature. However, something I also came to realize is that although these design principles are extremely helpful and provide a strong framework, 
+                UI/UX is ultimately human-centred. As much as you can ensure your interface adheres to these principles, 
+                it's not until you get in front of users that you’ll truly know whether your design is effective. 
+                This is something I learned first hand from conducting focus groups with live demos, and I now know that designing interfaces is a combination of robust knowledge of principles and iteration upon user feedback.
               </p>
             </div>
 
@@ -170,10 +180,14 @@ const ResearchAssistantPage = () => (
                 Enhance Leadership and Collaboration
               </h4>
               <p className="text-gray-700">
-                As someone naturally on the more introverted side, having a quantifiable action plan 
-                helped me contribute meaningfully to project discussions. By preparing notes in advance 
-                and contributing a minimum of two suggestions at weekly meetings, I felt more integrated 
-                into the team and learned that pushing yourself always leads to growth.
+                Thanks to this goal, I was able to really push myself in developing my leadership and collaboration skills! 
+                As someone who is naturally on the more introverted side of the spectrum, 
+                having this quantifiable and specific action plan ensured that I knew exactly what I needed to do, 
+                and how to accomplish it. From contributing a minimum of two suggestions at these weekly meetings, 
+                I felt more integrated into the team, and as though I was taking the initiative in steering the direction of this research project. 
+                Something I found really helpful was preparing notes in advance of meetings, 
+                so that I could see exactly what I wanted to propose and discuss with the team, 
+                rather than having to come up with ideas on the spot. Ultimately, I came to see that I’m capable of doing difficult things if I set my mind to it - and that pushing yourself will always lead to growth.
               </p>
             </div>
           </div>
