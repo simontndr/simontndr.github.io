@@ -15,6 +15,7 @@ import PhotoCard from '../assets/photoCard.png';
 
 const JourneyPage = () => {
 
+  /*
   const webAppDev = {
     jobTitle: "Web Application Developer",
     company: "Kenna",
@@ -25,6 +26,7 @@ const JourneyPage = () => {
     Quote: "more to come...",
     reportUrl: ""
   }
+  */
 
   const researchAssistant = {
     jobTitle: "Research Assistant (NSERC)",
@@ -34,7 +36,7 @@ const JourneyPage = () => {
     description: "As a Research Assistant, I helped prototype a livestreaming platform for global K-pop fans, integrating AI tools to support multilingual interaction. I learned how to conduct instrumentation for UI/UX research and ensure Firestore data was securely structured. This role taught me how to align technical development with academic goals and user inclusivity.",
     photoUrl: PhotoCard,
     Quote: "Being a research assistant was like trading K-pop photo cards - you're constantly exchanging ideas, hoping to find the rare ones worth holding onto.",
-    reportUrl: "/researchAssistant"
+    reportUrl: "/researchAssistant#researchTop"
   }
 
   const teachingAssistant = {
@@ -80,10 +82,10 @@ const JourneyPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">
 
-    <Navbar />
-
     <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={journeySvg} text="Learn more about my experiences." textStyle={'font-courier font-bold text-md md:text-xl text-midnight mb-4'} animate={false}/>
 
+    <Navbar />
+    
     <div id="overview" className="flex flex-col items-center justify-center w-full pt-20">
       <div className="md:w-[60%] px-8">
         <h2 className="text-2xl md:text-3xl font-bold text-midnight font-syncopate uppercase mb-10">Overview</h2>
