@@ -37,7 +37,7 @@ const Footer = ({topRef}) => {
                 {/* Contact links */}
                 <div className="flex flex-wrap gap-4 font-courier">
                 <div className="text-midnight font-courier">
-                    stenedero@uoguelph.ca
+                    steneder@uoguelph.ca
                 </div>
                 <Link to="https://www.linkedin.com/in/simontenedero/" target="_blank" rel="noopener noreferrer" className="text-midnight font-courier underline hover:font-bold">
                     LinkedIn

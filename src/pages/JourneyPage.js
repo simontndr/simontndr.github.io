@@ -12,21 +12,22 @@ import Duck from '../assets/duck.png';
 import House from '../assets/house.png';
 import Sheep from '../assets/sheep.png';
 import PhotoCard from '../assets/photoCard.png';
+import Brick from '../assets/brick.png';
 
 const JourneyPage = () => {
 
-  /*
   const webAppDev = {
-    jobTitle: "Web Application Developer",
-    company: "Kenna",
-    startDate: "September 2025",
-    endDate: "present",
-    description: "Contributing to CRM-driven projects, focusing on full-stack development.",
-    photoUrl: "",
-    Quote: "more to come...",
-    reportUrl: ""
-  }
-  */
+  jobTitle: "Web Application Developer",
+  company: "Kenna",
+  startDate: "September 2025",
+  endDate: "December 2025",
+  description:
+    "As a Web Application Developer at Kenna, I built enterprise web features supporting BASF Agricultural Solutions, translating evolving business requirements into reliable, user-focused tools. This role strengthened my ability to write clear, maintainable production code while working closely with account managers and rigorous QA processes.",
+  photoUrl: Brick,
+  Quote:
+    "Developing good software is like working with building blocks — everyone brings their own piece, and together they form something complete.",
+  reportUrl: "/webDeveloper#kennaTop"
+  };
 
   const researchAssistant = {
     jobTitle: "Research Assistant (NSERC)",
@@ -37,7 +38,7 @@ const JourneyPage = () => {
     photoUrl: PhotoCard,
     Quote: "Being a research assistant was like trading K-pop photo cards - you're constantly exchanging ideas, hoping to find the rare ones worth holding onto.",
     reportUrl: "/researchAssistant#researchTop"
-  }
+  };
 
   const teachingAssistant = {
     jobTitle: "Teaching Assistant (Software Design II)",
@@ -73,6 +74,7 @@ const JourneyPage = () => {
   };
 
   const workExperiences = [
+    webAppDev,
     researchAssistant,
     teachingAssistant,
     residenceAssistant,
