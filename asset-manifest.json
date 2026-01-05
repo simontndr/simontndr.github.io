@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.1d9564f5.css",
-    "main.js": "/static/js/main.85f21c71.js",
+    "main.js": "/static/js/main.05a39592.js",
     "static/js/453.f11b90ff.chunk.js": "/static/js/453.f11b90ff.chunk.js",
     "static/media/reynoldsBlurTransp.png": "/static/media/reynoldsBlurTransp.ede0b993d287bc2a85e6.png",
     "static/media/mbynLabs.png": "/static/media/mbynLabs.43328440c5883586bdcc.png",
     "static/media/transp-home-hero.png": "/static/media/transp-home-hero.beba1b60b96089a6262e.png",
     "static/media/kpop_platform.png": "/static/media/kpop_platform.f4540c105102f88c9dd2.png",
     "static/media/photoCard.png": "/static/media/photoCard.2f57da4807881b5e33f8.png",
+    "static/media/brick.png": "/static/media/brick.b4aa4e12402b3ca5415f.png",
     "static/media/developer_card.png": "/static/media/developer_card.06bcd91611d85b91615c.png",
     "static/media/journeyHero.png": "/static/media/journeyHero.52b59751316871f4b70d.png",
     "static/media/house.png": "/static/media/house.db9ea654cda4e877dc04.png",
     "static/media/sheep.png": "/static/media/sheep.854f7a46526d3a9e0d1f.png",
+    "static/media/kennaBlurTransp.png": "/static/media/kennaBlurTransp.f0d27d22b1519f89574e.png",
     "static/media/cardami.png": "/static/media/cardami.739df3bd47dbfe0e76f0.png",
     "static/media/duck.png": "/static/media/duck.8df21525602fe4bb5a13.png",
     "static/media/footerDoodle.png": "/static/media/footerDoodle.a1efb441fc74f5fc0f61.png",
@@ -30,11 +32,11 @@
     "index.html": "/index.html",
     "static/media/marqueeStar.svg": "/static/media/marqueeStar.b763faa5887fcb9ba3722197cd681430.svg",
     "main.1d9564f5.css.map": "/static/css/main.1d9564f5.css.map",
-    "main.85f21c71.js.map": "/static/js/main.85f21c71.js.map",
+    "main.05a39592.js.map": "/static/js/main.05a39592.js.map",
     "453.f11b90ff.chunk.js.map": "/static/js/453.f11b90ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d9564f5.css",
-    "static/js/main.85f21c71.js"
+    "static/js/main.05a39592.js"
   ]
 }
