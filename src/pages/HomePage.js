@@ -121,10 +121,10 @@ const HomePage = () => {
               </h4>
 
               <ul className="list-disc list-outside space-y-1 pl-4">
-                <li className="font-bold">Web App Dev @Kenna (Current) </li>
-                <li>Research Assistant @CCMPS (S25)</li>
+                <li className="font-bold">Research Assistant @CCMPS (Current)</li>
+                <li className="font-bold">Residence Assistant @SHS (Current)</li>
+                <li>Web App Dev @Kenna (F25) </li>
                 <li>Software Design TA @CCMPS (W25)</li>
-                <li>Residence Assistant @SHS (F24&W25)</li>
                 <li>Best Web3 @Spurhacks&nbsp;'25</li>
               </ul>
 

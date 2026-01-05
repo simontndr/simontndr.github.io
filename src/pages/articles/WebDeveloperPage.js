@@ -210,36 +210,55 @@ const WebDeveloperPage = () => (
           <div className="space-y-10">
             <div className="border-l-4 border-midnight pl-6 text-left">
               <h4 className="text-lg font-semibold text-midnight mb-2 uppercase">
-                Strengthen Enterprise Web Development Skills
+                	Enhance Problem Solving through the consistent completion of project tickets
               </h4>
               <p className="text-gray-700">
-                Through hands-on work with React, REST APIs, and SQL Server, I
-                strengthened my ability to build scalable, maintainable features
-                within large, long-lived codebases. This experience directly
-                prepared me for future roles requiring enterprise-level software
-                development.
+                	From consistently completing project tickets throughout the semester, 
+                  I was able to noticeably strengthen my problem-solving skills. 
+                  Actively documenting my challenges and solutions helped me identify recurring patterns in my thinking 
+                  (both effective habits and areas that needed improvement) which ultimately made me more efficient when approaching new assignments. 
+                  One key realization was that when working with endpoints or tickets involving data transfer between the frontend and backend, 
+                  I often focused too narrowly on the most visible symptom of an issue. 
+                  In reality, these problems often required a more holistic understanding of how different components interacted. 
+                  To address this, I became much more intentional with my debugging strategies: using detailed print statements, 
+                  sketching out system diagrams, and mapping the relationships between files. 
+                  These practices helped me uncover root causes more systematically. 
+                  Over time, I grew increasingly comfortable tackling unfamiliar tickets independently, 
+                  while still knowing when to seek clarification from the team. 
+                  This learning goal made me more confident, reliable, and adaptable, and motivated me to contribute meaningfully to our team's progress.
               </p>
             </div>
 
             <div className="border-l-4 border-midnight pl-6 text-left">
               <h4 className="text-lg font-semibold text-midnight mb-2 uppercase">
-                Improve Professional Software Delivery Practices
+                	Strengthen abilities in Quantitative Analysis through the study and application of Financial Principles
               </h4>
               <p className="text-gray-700">
-                By participating in structured QA, reviews, and release processes,
-                I developed a stronger understanding of how software moves from
-                development to production in an industry environment.
+                Dedicating time each day to the Khan Academy Financial Literacy course allowed me to build a stronger foundation in quantitative concepts and financial reasoning. 
+                As I progressed through the units, I developed a much clearer understanding of how credit works - including the key factors that contribute to a credit score, 
+                such as credit utilization, payment history, and the length of credit accounts. 
+                This knowledge helped me better appreciate how everyday financial decisions can have long-term impacts. 
+                Beyond credit, the course also expanded my business knowledge in ways directly relevant to being a working professional in any field. 
+                For example, one of the modules explored different forms of insurance, and I learned how employee benefits such as health insurance, disability coverage, 
+                and retirement plans play a major role in evaluating job opportunities. These insights helped me interpret numerical information more confidently, 
+                evaluate trade-offs in real scenarios, and understand the broader financial context surrounding professional life. 
+                Sharing weekly takeaways reinforced my learning and sparked meaningful discussions during one-on-ones. 
+                Ultimately, this initiative strengthened both my analytical abilities and my confidence when approaching the technical and business-oriented aspects of team projects.
               </p>
             </div>
 
             <div className="border-l-4 border-midnight pl-6 text-left">
               <h4 className="text-lg font-semibold text-midnight mb-2 uppercase">
-                Enhance Collaboration and Communication
+                Improve written communication through effective correspondence with team members
               </h4>
               <p className="text-gray-700">
-                Working closely with account managers and teammates strengthened my
-                ability to translate business needs into technical solutions and
-                communicate clearly across disciplines.
+                Through the daily practice of writing concise updates to my supervisor, 
+                I enhanced the clarity and structure of my written communication. 
+                This habit helped me stay organized, set daily intentions, and reflect on my progress. 
+                When encountering obstacles, I learned to articulate the context, my debugging attempts, and the specific support I needed, 
+                which made problem resolution faster and more collaborative. 
+                Over time, my communication became more proactive, precise, and helpful to the team, 
+                ultimately strengthening trust and demonstrating my commitment to learning.
               </p>
             </div>
           </div>
