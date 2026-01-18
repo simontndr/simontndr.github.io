@@ -16,6 +16,28 @@ import Brick from '../assets/brick.png';
 
 const JourneyPage = () => {
 
+  const researchAssistant = {
+    jobTitle: "Research Assistant (NSERC)",
+    company: "College of Computational, Mathematical & Physical Sciences, UofG",
+    startDate: "May 2025",
+    endDate: "Present",
+    description: "As a Research Assistant, I helped prototype a livestreaming platform for global K-pop fans, integrating AI tools to support multilingual interaction. I learned how to conduct instrumentation for UI/UX research and ensure Firestore data was securely structured. This role taught me how to align technical development with academic goals and user inclusivity.",
+    photoUrl: PhotoCard,
+    Quote: "Being a research assistant was like trading K-pop photo cards - you're constantly exchanging ideas, hoping to find the rare ones worth holding onto.",
+    reportUrl: "/researchAssistant#researchTop"
+  };
+
+  const residenceAssistant = {
+    jobTitle: "Residence Assistant",
+    company: "Student Housing Services, UofG",
+    startDate: "August 2024",
+    endDate: "Present",
+    description: "As a Residence Assistant, I supported student well-being through building an inclusive community and serving as a reliable point of contact during conflicts and emergencies. I learned how to lead with empathy, manage responsibilities under pressure, and plan events that brought people together. This role deepened my commitment to fostering safe, welcoming spaces for others.",
+    photoUrl: House,
+    Quote: "Building a community is a lot like decorating a dollhouse dining room - you always make sure there’s a seat for everyone at the table.",
+    reportUrl: ""
+  };
+
   const webAppDev = {
   jobTitle: "Web Application Developer",
   company: "Kenna",
@@ -26,18 +48,7 @@ const JourneyPage = () => {
   photoUrl: Brick,
   Quote:
     "Developing good software is like working with building blocks — everyone brings their own piece, and together they form something complete.",
-  reportUrl: "/webDeveloper#kennaTop"
-  };
-
-  const researchAssistant = {
-    jobTitle: "Research Assistant (NSERC)",
-    company: "College of Computational, Mathematical & Physical Sciences, UofG",
-    startDate: "May 2025",
-    endDate: "August 2025",
-    description: "As a Research Assistant, I helped prototype a livestreaming platform for global K-pop fans, integrating AI tools to support multilingual interaction. I learned how to conduct instrumentation for UI/UX research and ensure Firestore data was securely structured. This role taught me how to align technical development with academic goals and user inclusivity.",
-    photoUrl: PhotoCard,
-    Quote: "Being a research assistant was like trading K-pop photo cards - you're constantly exchanging ideas, hoping to find the rare ones worth holding onto.",
-    reportUrl: "/researchAssistant#researchTop"
+  reportUrl: "/webDeveloper#webDevTop"
   };
 
   const teachingAssistant = {
@@ -48,17 +59,6 @@ const JourneyPage = () => {
     description: "As a Teaching Assistant I supported students through weekly labs, code reviews, and project troubleshooting. I learned how to explain abstract design principles clearly and give actionable feedback on python data analysis algorithms. Something I valued in this role was helping students build confidence in their technical and problem-solving skills.",
     photoUrl: Sheep,
     Quote: "As a teaching assistant, I wanted to be like a stuffed animal - there for unyielding support and reliability.",
-    reportUrl: ""
-  };
-
-  const residenceAssistant = {
-    jobTitle: "Residence Assistant",
-    company: "Student Housing Services, UofG",
-    startDate: "August 2024",
-    endDate: "April 2025",
-    description: "As a Residence Assistant, I supported student well-being through building an inclusive community and serving as a reliable point of contact during conflicts and emergencies. I learned how to lead with empathy, manage responsibilities under pressure, and plan events that brought people together. This role deepened my commitment to fostering safe, welcoming spaces for others.",
-    photoUrl: House,
-    Quote: "Building a community is a lot like decorating a dollhouse dining room - you always make sure there’s a seat for everyone at the table.",
     reportUrl: ""
   };
 
@@ -74,10 +74,10 @@ const JourneyPage = () => {
   };
 
   const workExperiences = [
-    webAppDev,
     researchAssistant,
-    teachingAssistant,
     residenceAssistant,
+    webAppDev,
+    teachingAssistant,
     softwareEngineeringIntern,
   ];
 
