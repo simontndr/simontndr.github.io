@@ -17,10 +17,10 @@ import Brick from '../assets/brick.png';
 const JourneyPage = () => {
 
   const researchAssistant = {
-    jobTitle: "Research Assistant (NSERC)",
-    company: "College of Computational, Mathematical & Physical Sciences, UofG",
+    jobTitle: "User Experience Research Assistant",
+    company: "University of Guelph",
     startDate: "May 2025",
-    endDate: "Present",
+    endDate: "Apr 2026",
     description: "As a Research Assistant, I helped prototype a livestreaming platform for global K-pop fans, integrating AI tools to support multilingual interaction. I learned how to conduct instrumentation for UI/UX research and ensure Firestore data was securely structured. This role taught me how to align technical development with academic goals and user inclusivity.",
     photoUrl: PhotoCard,
     Quote: "Being a research assistant was like trading K-pop photo cards - you're constantly exchanging ideas, hoping to find the rare ones worth holding onto.",
@@ -30,8 +30,8 @@ const JourneyPage = () => {
   const residenceAssistant = {
     jobTitle: "Residence Assistant",
     company: "Student Housing Services, UofG",
-    startDate: "August 2024",
-    endDate: "Present",
+    startDate: "Aug 2024",
+    endDate: "Apr 2026",
     description: "As a Residence Assistant, I supported student well-being through building an inclusive community and serving as a reliable point of contact during conflicts and emergencies. I learned how to lead with empathy, manage responsibilities under pressure, and plan events that brought people together. This role deepened my commitment to fostering safe, welcoming spaces for others.",
     photoUrl: House,
     Quote: "Building a community is a lot like decorating a dollhouse dining room - you always make sure there’s a seat for everyone at the table.",
@@ -41,8 +41,8 @@ const JourneyPage = () => {
   const webAppDev = {
   jobTitle: "Web Application Developer",
   company: "Kenna",
-  startDate: "September 2025",
-  endDate: "December 2025",
+  startDate: "Sep 2025",
+  endDate: "Dec 2025",
   description:
     "As a Web Application Developer at Kenna, I built enterprise web features supporting BASF Agricultural Solutions, translating evolving business requirements into reliable, user-focused tools. This role strengthened my ability to write clear, maintainable production code while working closely with account managers and rigorous QA processes.",
   photoUrl: Brick,
@@ -53,9 +53,9 @@ const JourneyPage = () => {
 
   const teachingAssistant = {
     jobTitle: "Teaching Assistant (Software Design II)",
-    company: "College of Computational, Mathematical & Physical Sciences, UofG",
-    startDate: "January 2025",
-    endDate: "April 2025",
+    company: "University of Guelph",
+    startDate: "Jan 2025",
+    endDate: "Apr 2025",
     description: "As a Teaching Assistant I supported students through weekly labs, code reviews, and project troubleshooting. I learned how to explain abstract design principles clearly and give actionable feedback on python data analysis algorithms. Something I valued in this role was helping students build confidence in their technical and problem-solving skills.",
     photoUrl: Sheep,
     Quote: "As a teaching assistant, I wanted to be like a stuffed animal - there for unyielding support and reliability.",
@@ -66,7 +66,7 @@ const JourneyPage = () => {
     jobTitle: "Software Engineering Intern",
     company: "mbyn Labs",
     startDate: "May 2024",
-    endDate: "August 2024",
+    endDate: "Aug 2024",
     description: "As a Software Engineering Intern, I collaborated with stakeholders to design a responsive landing page that met evolving requirements. I learned how to iterate quickly by wireframing in Figma and refining components based on user feedback. This experience taught me the value of balancing technical feasibility with clean, user-centered design.",
     photoUrl: Duck,
     Quote: "As a software developer, sometimes explaining the problem out loud to a duck is all it takes to find the solution.",

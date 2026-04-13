@@ -24,7 +24,7 @@ const HomePage = () => {
     cardTitle: 'Kpop Livestreaming Platform',
     cardSubtitle: '',
     cardText: "Created to make global fan interactions more accessible through AI integration, this project emphasizes an inclusive UI/UX for multilingual audiences. This project taught me about instrumentation and firestore data security.",
-    techUsed: ['React', 'Firebase', 'Axios', 'Express.js', 'API Integration',]
+    techUsed: ['React', 'Firebase', 'Axios', 'Express', 'API Integration',]
   }
 
   const cardami = {
@@ -34,7 +34,7 @@ const HomePage = () => {
     cardTitle: 'Cardami',
     cardSubtitle: 'Best Web3 - SpurHacks 2025',
     cardText: "Developed as a game where users complete unique challenges to collect cards, we sought to tackle the youth loneliness crisis through gamification. From designing the cards through Figma, I learned about brand identity, and visual storytelling.",
-    techUsed: ['React', 'Javascript', 'Firebase', 'Tailwind CSS', 'React-Spring',]
+    techUsed: ['React', 'Javascript', 'Firebase', 'Figma', 'Tailwind CSS'],
   }
 
   const chirp = {
@@ -44,7 +44,7 @@ const HomePage = () => {
     cardTitle: 'Chirp',
     cardSubtitle: 'GDSC Hacks 2025',
     cardText: "Designed as a task tracker, we wanted to find a playful way to encourage healthy lifestyle changes. This project taught me about SVG animation, as I focused my attention on the creation of our platform's mascot.",
-    techUsed: ['React', 'Javascript','GSAP','ngrok','Google API'],
+    techUsed: ['React', 'Javascript','Figma', 'Google API'],
   }
 
   const discussionBoard = {
@@ -103,30 +103,18 @@ const HomePage = () => {
         <div className="flex flex-col items-center text-left hero-content-text w-[100%] md:w-[50%] px-8 py-10">
           <div className="lg:w-[80%]">
             <h2 className="font-syncopate font-bold text-2xl md:text-3xl lg:text-4xl text-midnight mb-10 uppercase">
-              Web&nbsp;Developer. <br/>
-              Business&nbsp;Fan. <br/>
-              Human.
+              Leading&nbsp;Projects. <br/>
+              Connecting&nbsp;Teams. <br/>
+              Creating Impact.
             </h2>
 
             <div className="font-courier text-midnight">
 
               <p className="mb-6">
-                My name is <span className="font-bold">Simon Tenedero</span> - a third-year <span className="font-bold">software engineering co-op</span> student at the <span className="font-bold">University of Guelph</span> passionate about the intersection between technology, business and community building. 
-                Guided by these interests, I approach problem-solving through an interdisciplinary lens that emphasizes both innovation and human connection. 
-                When I’m not working, I enjoy exploring local trails, meeting new people and expanding my toy collection. 
+                My name is <span className="font-bold">Simon Tenedero</span> - a third-year <span className="font-bold">software engineering co-op</span> student at the <span className="font-bold">University of Guelph</span> passionate about the intersection between business, technology and community building. 
+                Guided by these interests, I approach problem-solving through an interdisciplinary lens that emphasizes both innovation and user-centered design. 
+                When I’m not working, I enjoy exploring local trails, meeting new people and watching films.
               </p>
-              
-              <h4 className="font-syncopate font-bold text-md  text-midnight mt-10 mb-3 uppercase">
-              Highlights
-              </h4>
-
-              <ul className="list-disc list-outside space-y-1 pl-4">
-                <li className="font-bold">Research Assistant @CCMPS (Current)</li>
-                <li className="font-bold">Residence Assistant @SHS (Current)</li>
-                <li>Web App Dev @Kenna (F25) </li>
-                <li>Software Design TA @CCMPS (W25)</li>
-                <li>Best Web3 @Spurhacks&nbsp;'25</li>
-              </ul>
 
             </div>
           </div>
