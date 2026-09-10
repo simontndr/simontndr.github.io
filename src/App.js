@@ -4,9 +4,10 @@ import HomePage from './pages/HomePage';
 import JourneyPage from './pages/JourneyPage';
 import NotFoundPage from './pages/NotFoundPage';
 import ResearchAssistantPage from './pages/articles/ResearchAssistantPage';
+import WebDeveloperPage from './pages/articles/WebDeveloperPage';
+import LeaseAnalystPage from './pages/articles/LeaseAnalystPage';
 import ScrollToHashElement from './components/ScrollToHashElement';
 import './App.css';
-import WebDeveloperPage from './pages/articles/WebDeveloperPage';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/journey" element={<JourneyPage />} />
           <Route path="/researchAssistant" element={<ResearchAssistantPage />} />
           <Route path="/webDeveloper" element={<WebDeveloperPage />} />
+          <Route path="/leaseAnalyst" element={<LeaseAnalystPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>

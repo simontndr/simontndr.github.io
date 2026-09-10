@@ -13,8 +13,31 @@ import House from '../assets/house.png';
 import Sheep from '../assets/sheep.png';
 import PhotoCard from '../assets/photoCard.png';
 import Brick from '../assets/brick.png';
+import Hirono from '../assets/hirono.png';
 
 const JourneyPage = () => {
+
+  const leaseAnalyst = {
+    jobTitle: "Lease Data Analyst",
+    company: "BGIS",
+    startDate: "May 2026",
+    endDate: "Aug 2026",
+    description: "As a Lease Data Analyst, I worked on the National Bank account within the Lease Administration team, gaining hands on experience with property and lease data across a large corporate real estate portfolio. A lot of my work concentrated on optimizing reporting workflows, and maintaining accurate data for strategic decision making. This role strengthened my attention to detail, analytical thinking, and ability to apply data to real-world business processes.",
+    photoUrl: Hirono,
+    Quote: "Working with data requires a sharp attention to detail. It's almost like you need a magnifying glass!",
+    reportUrl: "/leaseAnalyst#leaseAnalystTop"
+  };
+
+  const residenceAssistant = {
+    jobTitle: "Residence Assistant",
+    company: "University of Guelph",
+    startDate: "Aug 2024",
+    endDate: "Apr 2026",
+    description: "As a Residence Assistant, I supported student well-being through building an inclusive community and serving as a reliable point of contact during conflicts and emergencies. I learned how to lead with empathy, manage responsibilities under pressure, and plan events that brought people together. This role deepened my commitment to fostering safe, welcoming spaces for others.",
+    photoUrl: House,
+    Quote: "Building a community is a lot like decorating a dollhouse dining room - you always make sure there’s a seat for everyone at the table.",
+    reportUrl: ""
+  };
 
   const researchAssistant = {
     jobTitle: "User Experience Research Assistant",
@@ -25,17 +48,6 @@ const JourneyPage = () => {
     photoUrl: PhotoCard,
     Quote: "Being a research assistant was like trading K-pop photo cards - you're constantly exchanging ideas, hoping to find the rare ones worth holding onto.",
     reportUrl: "/researchAssistant#researchTop"
-  };
-
-  const residenceAssistant = {
-    jobTitle: "Residence Assistant",
-    company: "Student Housing Services, UofG",
-    startDate: "Aug 2024",
-    endDate: "Apr 2026",
-    description: "As a Residence Assistant, I supported student well-being through building an inclusive community and serving as a reliable point of contact during conflicts and emergencies. I learned how to lead with empathy, manage responsibilities under pressure, and plan events that brought people together. This role deepened my commitment to fostering safe, welcoming spaces for others.",
-    photoUrl: House,
-    Quote: "Building a community is a lot like decorating a dollhouse dining room - you always make sure there’s a seat for everyone at the table.",
-    reportUrl: ""
   };
 
   const webAppDev = {
@@ -74,8 +86,9 @@ const JourneyPage = () => {
   };
 
   const workExperiences = [
-    researchAssistant,
+    leaseAnalyst,
     residenceAssistant,
+    researchAssistant,
     webAppDev,
     teachingAssistant,
     softwareEngineeringIntern,

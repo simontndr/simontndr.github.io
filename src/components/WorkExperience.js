@@ -22,7 +22,7 @@ const WorkExperience = ({experience}) => {
       </div>
 
       <div className="work-content md:w-[50%] flex flex-col items-center px-8">
-          <div className="md:w-[70%]">
+          <div className="md:w-[70%] mb-4">
             <p className="text-sm font-courier text-right text-midnight font-bold mb-2">
               {startDate} - {endDate}
             </p>

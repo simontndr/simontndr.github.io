@@ -102,16 +102,16 @@ const HomePage = () => {
 
         <div className="flex flex-col items-center text-left hero-content-text w-[100%] md:w-[50%] px-8 py-10">
           <div className="lg:w-[80%]">
-            <h2 className="font-syncopate font-bold text-2xl md:text-3xl lg:text-4xl text-midnight mb-10 uppercase">
+            <h2 className="font-syncopate font-bold text-2xl lg:text-3xl text-midnight mb-10 uppercase">
               Leading&nbsp;Projects. <br/>
-              Connecting&nbsp;Teams. <br/>
-              Creating Impact.
+              Analyzing&nbsp;Data. <br/>
+              Driving Insights.
             </h2>
 
             <div className="font-courier text-midnight">
 
               <p className="mb-6">
-                My name is <span className="font-bold">Simon Tenedero</span> - a third-year <span className="font-bold">software engineering co-op</span> student at the <span className="font-bold">University of Guelph</span> passionate about the intersection between business, technology and community building. 
+                My name is <span className="font-bold">Simon Tenedero</span> - a fourth-year <span className="font-bold">software engineering co-op</span> student at the <span className="font-bold">University of Guelph</span> passionate about the intersection between business, technology and community building. 
                 Guided by these interests, I approach problem-solving through an interdisciplinary lens that emphasizes both innovation and user-centered design. 
                 When I’m not working, I enjoy exploring local trails, meeting new people and watching films.
               </p>
