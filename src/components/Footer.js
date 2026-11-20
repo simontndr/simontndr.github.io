@@ -48,7 +48,7 @@ const Footer = ({topRef}) => {
                 </div>
             </div>
 
-            <img src={simonSvg} alt="Simon SVG" className="w-[300px] md:w-[400px] lg:w-[500px] "/> 
+            <img src={simonSvg} loading="lazy" decoding="async" alt="Simon SVG" className="w-[300px] md:w-[400px] lg:w-[500px] "/> 
             
         </div>
 

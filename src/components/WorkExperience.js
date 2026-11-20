@@ -16,7 +16,7 @@ const WorkExperience = ({experience}) => {
       
       <div className="work-photo flex justify-end items-center md:w-[50%]">
         <div className="md:w-[60%] px-8 flex flex-col justify-center items-center my-10">
-          {photoUrl && <img src={photoUrl} alt={jobTitle} className="w-[250px] h-[250px] object-contain" />}
+          {photoUrl && <img loading="lazy" decoding="async" src={photoUrl} alt={jobTitle} className="w-[250px] h-[250px] object-contain" />}
           {Quote && <blockquote className="mt-4 italic font-courier text-sm">"{Quote}"</blockquote>}
         </div>
       </div>
