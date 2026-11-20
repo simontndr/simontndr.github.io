@@ -6,7 +6,7 @@ const Card = ({imageUrl, readMoreUrl, imageAlt, cardTitle, cardSubtitle, cardTex
             <p className="card-title font-syncopate font-bold uppercase text-sm">{cardTitle}</p>
             <p className="card-subtitle mb-2 text-muted font-syncopate uppercase text-sm">{cardSubtitle}</p>
             <a href={readMoreUrl} className="mb-3" target="_blank" rel="noopener noreferrer">
-                <img src={imageUrl} loading="lazy" decoding="async" className="card-img-top border-1 border-midnight rounded-1" alt={imageAlt}/>
+                <img src={imageUrl} decoding="async" className="card-img-top border-1 border-midnight rounded-1" alt={imageAlt}/>
             </a>
             <div>
                 <p className="card-text font-courier text-sm">{cardText}</p>

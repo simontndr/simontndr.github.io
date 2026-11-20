@@ -9,7 +9,15 @@ const ResearchAssistantPage = () => (
   <div className="min-h-screen bg-gray-50">
     <Navbar />
 
-    <Hero id="researchTop" readMore="#abstract" bgUrl={ResearchBg} imageUrl={""} text="My Experience as a Research Assistant at CCMPS" textStyle={'max-w-5xl text-4xl md:text-5xl font-bold text-midnight font-syncopate'} animate={false}/>
+    <Hero 
+      id="researchTop" 
+      readMore="#abstract" 
+      bgUrl={ResearchBg} 
+      imageUrl={""} 
+      text="My Experience as a Research Assistant at CCMPS" 
+      textStyle={'max-w-5xl text-4xl md:text-5xl font-bold text-midnight font-syncopate uppercase'} 
+      animate={false}
+    />
 
     {/* Content */}
     <div className="mx-auto font-courier">

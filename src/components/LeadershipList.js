@@ -22,7 +22,7 @@ const leadership = [
   },
   {
     role: "Representative",
-    organization: "Career Development Record Committee",
+    organization: "PCDR Advisory Committee",
     url: "https://www.uoguelph.ca/experiential-learning/pcdr",
   },
 ];
@@ -39,7 +39,7 @@ const LeadershipList = () => {
               : ""
           }`}
         >
-          <span className="font-bold text-lg md:text-xl lg:text-2xl text-left">
+          <span className="font-syncopate uppercase font-bold text-lg md:text-xl lg:text-2xl text-left">
             {item.role}
           </span>
 
@@ -47,7 +47,7 @@ const LeadershipList = () => {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 font-semibold text-base lg:text-lg border-b hover:text-royal"
+            className="flex items-center gap-2 font-semibold text-base lg:text-lg hover:text-royal"
           >
             {item.organization}
             <span className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">

@@ -15,7 +15,7 @@ const WebDeveloperPage = () => (
       bgUrl={KennaBg}
       imageUrl={""}
       text="My Experience as a Web Application Developer at Kenna"
-      textStyle="max-w-5xl text-4xl md:text-5xl font-bold text-midnight font-syncopate"
+      textStyle="max-w-5xl text-4xl md:text-5xl font-bold text-midnight font-syncopate uppercase"
       animate={false}
     />
 

@@ -117,7 +117,7 @@ const HomePage = () => {
             <div className="font-courier text-midnight">
 
               <p className="mb-6">
-                My name is <span className="font-bold">Simon Tenedero</span> - a fourth-year <span className="font-bold">software engineering co-op</span> student at the <span className="font-bold">University of Guelph</span> passionate about the intersection between business, technology and community building. 
+                My name is <span className="font-bold">Simon Tenedero</span> - a fourth-year <span className="font-bold">Software Engineering Co-op</span> student at the <span className="font-bold">University of Guelph</span> passionate about the intersection between business, technology and community building. 
                 Guided by these interests, I approach problem-solving through an interdisciplinary lens that emphasizes both innovation and user-centered design. 
                 When I’m not working, I enjoy exploring local trails, meeting new people and watching films.
               </p>
