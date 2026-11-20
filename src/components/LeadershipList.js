@@ -47,7 +47,7 @@ const LeadershipList = () => {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm md:text-base lg:text-lg opacity-60 group-hover:opacity-100 transition-opacity"
+            className="flex items-center gap-2 font-semibold text-base lg:text-lg border-b hover:text-royal"
           >
             {item.organization}
             <span className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">

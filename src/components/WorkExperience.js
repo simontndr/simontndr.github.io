@@ -36,7 +36,7 @@ const WorkExperience = ({experience}) => {
             {reportUrl && (
               <Link
                 to={reportUrl}
-                className="group self-start inline-flex items-center gap-2 mt-3 font-bold font-courier text-sm text-midnight border-b border-midnight/40 pb-1 hover:border-midnight transition-all"
+                className="group self-start inline-flex items-center gap-2 mt-3 font-bold border-b font-courier text-sm text-midnight hover:text-royal hover:border-b pb-1"
               >
                 Co-op Report
                 <span className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
