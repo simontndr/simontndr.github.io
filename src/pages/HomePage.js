@@ -1,18 +1,24 @@
 import Navbar from "../components/Navbar";
+
 import heroBg from "../assets/hero-images/transp-home-hero.webp";
 import simonSvg from "../assets/svgs/simon.svg";
 import Hero from "../components/Hero";
+
+import FlippingCard from "../components/FlippingCard.js";
+
 import MarqueeTag from "../components/MarqueeTag.js";
 import CardCarousel from "../components/CardCarousel.js";
+
 import FooterBanner from "../components/FooterBanner.js";
 import Footer from "../components/Footer.js";
-import kpopImage from '../assets/kpop_platform.png';
-import cardamiImage from '../assets/cardami.png';
-import chirpImage from '../assets/chirp.png';
-import discussionBoardImage from '../assets/discussionBoard.png';
-import mbynLabsImage from '../assets/mbynLabs.png';
-import dataAnalysis from '../assets/dataAnalysis.png';
-import FlippingCard from "../components/FlippingCard.js";
+
+import kpopImage from '../assets/project-thumbnails/kpop_platform.png';
+import cardamiImage from '../assets/project-thumbnails/cardami.png';
+import chirpImage from '../assets/project-thumbnails/chirp.png';
+import discussionBoardImage from '../assets/project-thumbnails/discussionBoard.png';
+import mbynLabsImage from '../assets/project-thumbnails/mbynLabs.png';
+import dataAnalysis from '../assets/project-thumbnails/dataAnalysis.png';
+
 import { Link } from 'react-router-dom';
 import '../components/styles/movingBorder.css'
 

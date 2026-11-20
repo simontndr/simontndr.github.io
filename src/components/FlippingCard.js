@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated as a, useSpringValue } from "@react-spring/web";
-import developerCard from "../assets/developer_card.png";
 import simonSvg from "../assets/svgs/simon.svg";
-import sonny from "../assets/sonny.png";
-import calico from "../assets/calico.png";
-import marble from "../assets/marble.png";
+import developerCard from "../assets/flipping-card-images/developer_card.png";
+import sonny from "../assets/flipping-card-images/sonny.png";
+import calico from "../assets/flipping-card-images/calico.png";
+import marble from "../assets/flipping-card-images/marble.png";
 
 const FlippingCard = () => {
   const [flipped, setFlipped] = useState(false);
