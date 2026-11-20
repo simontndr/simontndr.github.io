@@ -18,7 +18,17 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const handleLoad = () => setIsLoading(false);
+    const startTime = Date.now();
+    const minimumDuration = 2000;
+
+    const handleLoad = () => {
+      const elapsedTime = Date.now() - startTime;
+      const remainingTime = Math.max(0, minimumDuration - elapsedTime);
+
+      setTimeout(() => {
+        setIsLoading(false);
+      }, remainingTime);
+    };
 
     if (document.readyState === 'complete') {
       handleLoad();
@@ -26,7 +36,9 @@ function App() {
       window.addEventListener('load', handleLoad);
     }
 
-    return () => window.removeEventListener('load', handleLoad);
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
   }, []);
 
   return (
@@ -34,10 +46,8 @@ function App() {
 
       {isLoading && <Preloader />}
 
-      {/* Scroll to hash behavior on route change */}
       <ScrollToHashElement />
 
-      {/* Main routing */}
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
