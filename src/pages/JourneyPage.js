@@ -5,8 +5,8 @@ import WorkExperience from '../components/WorkExperience';
 import LeadershipList from '../components/LeadershipList';
 import FooterBanner from '../components/FooterBanner';
 import Footer from '../components/Footer';
-import journeyBg from '../assets/journeyHero.png';
-import journeySvg from "../assets/journey.svg";
+import journeyBg from '../assets/hero-images/journeyHero.webp';
+import journeySvg from "../assets/svgs/journey.svg";
 
 import Duck from '../assets/duck.png';
 import House from '../assets/house.png';

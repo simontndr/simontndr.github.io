@@ -1,6 +1,6 @@
 import logo from '../assets/logo.png';
-import simonSvg from '../assets/simon.svg';
-import BackUpSvg from '../assets/back-up.svg';
+import simonSvg from '../assets/svgs/simon.svg';
+import BackUpSvg from '../assets/svgs/back-up.svg';
 import './styles/components.css'
 import { Link, useLocation } from 'react-router-dom';
 

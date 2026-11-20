@@ -1,4 +1,4 @@
-import footerDoodle from '../assets/footerDoodle.png';
+import footerDoodle from '../assets/footerDoodle.webp';
 
 const FooterBanner = () => {
   return (

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated as a, useSpringValue } from "@react-spring/web";
 import developerCard from "../assets/developer_card.png";
-import simonSvg from "../assets/simon.svg";
+import simonSvg from "../assets/svgs/simon.svg";
 import sonny from "../assets/sonny.png";
 import calico from "../assets/calico.png";
 import marble from "../assets/marble.png";

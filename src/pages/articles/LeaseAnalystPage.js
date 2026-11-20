@@ -1,7 +1,7 @@
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
 import Hero from '../../components/Hero';
-import KennaBg from '../../assets/BGIS.jpg';
+import KennaBg from '../../assets/hero-images/BGIS.webp';
 import MarqueeTag from '../../components/MarqueeTag';
 import FooterBanner from '../../components/FooterBanner';
 

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import simonSvg from '../assets/simon.svg';
+import simonSvg from '../assets/svgs/simon.svg';
 
 const NotFoundPage = () => (
   <div className="w-full min-h-screen p-8 text-center flex flex-col justify-center items-center">
