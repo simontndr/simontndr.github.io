@@ -17,26 +17,27 @@ import Hirono from '../assets/hirono.png';
 
 const JourneyPage = () => {
 
+  const softwareEngineeringIntern = {
+    jobTitle: "Process Risk COE Intern",
+    company: "RBC",
+    startDate: "INCOMING",
+    endDate: "W27",
+    description: "loading...",
+    photoUrl: Brick,
+    Quote:
+      "Building the first line of defence, brick by brick!",
+    reportUrl: ""
+  };
+
   const leaseAnalyst = {
     jobTitle: "Lease Data Analyst",
     company: "BGIS",
     startDate: "May 2026",
     endDate: "Aug 2026",
-    description: "As a Lease Data Analyst, I worked on the National Bank account within the Lease Administration team, gaining hands on experience with property and lease data across a large corporate real estate portfolio. A lot of my work concentrated on optimizing reporting workflows, and maintaining accurate data for strategic decision making. This role strengthened my attention to detail, analytical thinking, and ability to apply data to real-world business processes.",
+    description: "As a Lease Data Analyst, I worked on the National Bank account within the Lease Administration team, gaining hands on experience with property data across a large corporate real estate portfolio. A lot of my work concentrated on optimizing reporting workflows, and maintaining accurate data for strategic decision making. This role strengthened my attention to detail, analytical thinking, and ability to apply data to real-world business processes.",
     photoUrl: Hirono,
     Quote: "Working with data requires a sharp attention to detail. It's almost like you need a magnifying glass!",
     reportUrl: "/leaseAnalyst#leaseAnalystTop"
-  };
-
-  const residenceAssistant = {
-    jobTitle: "Residence Assistant",
-    company: "University of Guelph",
-    startDate: "Aug 2024",
-    endDate: "Apr 2026",
-    description: "As a Residence Assistant, I supported student well-being through building an inclusive community and serving as a reliable point of contact during conflicts and emergencies. I learned how to lead with empathy, manage responsibilities under pressure, and plan events that brought people together. This role deepened my commitment to fostering safe, welcoming spaces for others.",
-    photoUrl: House,
-    Quote: "Building a community is a lot like decorating a dollhouse dining room - you always make sure there’s a seat for everyone at the table.",
-    reportUrl: ""
   };
 
   const researchAssistant = {
@@ -56,10 +57,9 @@ const JourneyPage = () => {
   startDate: "Sep 2025",
   endDate: "Dec 2025",
   description:
-    "As a Web Application Developer at Kenna, I built enterprise web features supporting BASF Agricultural Solutions, translating evolving business requirements into reliable, user-focused tools. This role strengthened my ability to write clear, maintainable production code while working closely with account managers and rigorous QA processes.",
-  photoUrl: Brick,
-  Quote:
-    "Developing good software is like working with building blocks — everyone brings their own piece, and together they form something complete.",
+    "As a Web Application Developer, I built ERP features supporting BASF Agricultural Solutions, translating evolving business requirements into reliable, user-focused tools. This role strengthened my ability to write clear, maintainable production code while working closely with account managers and rigorous QA processes.",
+  photoUrl: Duck,
+    Quote: "When developing software, sometimes explaining the problem out loud is all it takes to find the solution.",
   reportUrl: "/webDeveloper#webDevTop"
   };
 
@@ -68,30 +68,30 @@ const JourneyPage = () => {
     company: "University of Guelph",
     startDate: "Jan 2025",
     endDate: "Apr 2025",
-    description: "As a Teaching Assistant I supported students through weekly labs, code reviews, and project troubleshooting. I learned how to explain abstract design principles clearly and give actionable feedback on python data analysis algorithms. Something I valued in this role was helping students build confidence in their technical and problem-solving skills.",
+    description: "As a Teaching Assistant, I supported students through weekly labs, code reviews, and project troubleshooting. I guided students on design principles and gave actionable feedback on python data analysis algorithms. Something I valued in this role was helping students build confidence in their technical and problem-solving skills.",
     photoUrl: Sheep,
     Quote: "As a teaching assistant, I wanted to be like a stuffed animal - there for unyielding support and reliability.",
     reportUrl: ""
   };
 
-  const softwareEngineeringIntern = {
-    jobTitle: "Software Engineering Intern",
-    company: "mbyn Labs",
-    startDate: "May 2024",
-    endDate: "Aug 2024",
-    description: "As a Software Engineering Intern, I collaborated with stakeholders to design a responsive landing page that met evolving requirements. I learned how to iterate quickly by wireframing in Figma and refining components based on user feedback. This experience taught me the value of balancing technical feasibility with clean, user-centered design.",
-    photoUrl: Duck,
-    Quote: "As a software developer, sometimes explaining the problem out loud to a duck is all it takes to find the solution.",
+  const residenceAssistant = {
+    jobTitle: "Residence Assistant",
+    company: "University of Guelph",
+    startDate: "Aug 2024",
+    endDate: "Dec 2026",
+    description: "As a Residence Assistant, I supported student well-being through building an inclusive community and serving as a reliable point of contact during conflicts and emergencies. I learned how to lead with empathy, manage responsibilities under pressure, and plan events that brought people together. This role deepened my commitment to fostering safe, welcoming spaces for others.",
+    photoUrl: House,
+    Quote: "Building a community is a lot like decorating a dollhouse - you always make sure there’s space for everyone.",
     reportUrl: ""
   };
 
   const workExperiences = [
+    softwareEngineeringIntern,
     leaseAnalyst,
-    residenceAssistant,
     researchAssistant,
     webAppDev,
     teachingAssistant,
-    softwareEngineeringIntern,
+    residenceAssistant,
   ];
 
   return (
