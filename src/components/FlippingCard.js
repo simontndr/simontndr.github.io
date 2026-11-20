@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useSpring, animated as a, useSpringValue } from "@react-spring/web";
 import simonSvg from "../assets/svgs/simon.svg";
-import developerCard from "../assets/flipping-card-images/developer_card.png";
+import BACard from "../assets/flipping-card-images/ba-card.png";
 import sonny from "../assets/flipping-card-images/sonny.png";
 import calico from "../assets/flipping-card-images/calico.png";
 import marble from "../assets/flipping-card-images/marble.png";
@@ -101,7 +101,7 @@ const FlippingCard = () => {
           }}
         >
           <img
-            src={developerCard}
+            src={BACard}
             alt="Card Front"
             className="w-full h-full object-cover"
           />
