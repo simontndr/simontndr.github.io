@@ -6,3 +6,41 @@
     border-image-repeat: repeat;
     border-image-outset: 25px;
 }
+
+.image-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.image-link img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image-link:hover img,
+.image-link:focus-visible img {
+    transform: scale(1.04);
+    filter: brightness(0.85);
+}
+
+.image-link-badge {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    background: var(--color-dawn, #fff);
+    color: var(--color-midnight, #111);
+    border: 1px solid currentColor;
+    transition: transform 0.2s ease;
+}
+
+.image-link:hover .image-link-badge {
+    transform: translateY(-2px);
+}
+
+.image-link:focus-visible {
+    outline: 2px solid var(--color-midnight, #111);
+    outline-offset: 3px;
+}

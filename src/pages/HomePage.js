@@ -26,9 +26,10 @@ const HomePage = () => {
 
   const kpopLivestream = {
     imageUrl: kpopImage,
+    readMoreUrl: 'https://nserc-crsng.canada.ca/en/awards-database/816860',
     imageAlt: 'photo of kpop livestream',
     cardTitle: 'Kpop Livestreaming Platform',
-    cardSubtitle: '',
+    cardSubtitle: 'NSERC USRA recipient',
     cardText: "Created to make global fan interactions more accessible through AI integration, this project emphasizes an inclusive UI/UX for multilingual audiences. This project taught me about instrumentation and firestore data security.",
     techUsed: ['React', 'Firebase', 'Axios', 'Express', 'API Integration',]
   }
@@ -41,16 +42,6 @@ const HomePage = () => {
     cardSubtitle: 'Best Web3 - SpurHacks 2025',
     cardText: "Developed as a game where users complete unique challenges to collect cards, we sought to tackle the youth loneliness crisis through gamification. From designing the cards through Figma, I learned about brand identity, and visual storytelling.",
     techUsed: ['React', 'Javascript', 'Firebase', 'Figma', 'Tailwind CSS'],
-  }
-
-  const chirp = {
-    imageUrl: chirpImage,
-    readMoreUrl: 'https://devpost.com/software/chirp-habit-tracker',
-    imageAlt: 'photo of chirp',
-    cardTitle: 'Chirp',
-    cardSubtitle: 'GDSC Hacks 2025',
-    cardText: "Designed as a task tracker, we wanted to find a playful way to encourage healthy lifestyle changes. This project taught me about SVG animation, as I focused my attention on the creation of our platform's mascot.",
-    techUsed: ['React', 'Javascript','Figma', 'Google API'],
   }
 
   const discussionBoard = {
@@ -80,7 +71,17 @@ const HomePage = () => {
     techUsed: ['Python','Pandas','MatPlotLib','Seaborn']
   }
 
-  const projectInfo = [kpopLivestream, cardami, chirp, discussionBoard, mybnLabsLanding, statisticsCanada];
+  const chirp = {
+    imageUrl: chirpImage,
+    readMoreUrl: 'https://devpost.com/software/chirp-habit-tracker',
+    imageAlt: 'photo of chirp',
+    cardTitle: 'Chirp',
+    cardSubtitle: 'GDSC Hacks 2025',
+    cardText: "Designed as a task tracker, we wanted to find a playful way to encourage healthy lifestyle changes. This project taught me about SVG animation, as I focused my attention on the creation of our platform's mascot.",
+    techUsed: ['React', 'Javascript','Figma', 'Google API'],
+  }
+
+  const projectInfo = [kpopLivestream, cardami, discussionBoard, mybnLabsLanding, statisticsCanada, chirp];
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">

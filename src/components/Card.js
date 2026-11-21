@@ -1,19 +1,37 @@
 import './styles/card.css';
 
-// Original 300x550 size. The carousel positions it (no horizontal margin needed any more).
 const Card = ({ imageUrl, readMoreUrl, imageAlt, cardTitle, cardSubtitle, cardText, techUsed }) => {
+    const image = (
+        <img
+            src={imageUrl}
+            alt={imageAlt}
+            draggable={false}
+            className="card-img-top block border-1 border-midnight rounded-1"
+        />
+    );
+
     return (
         <div className="card custom-card w-[300px] h-[550px] p-2 bg-dawn drop-shadow-lg text-midnight text-left">
             <p className="card-title font-syncopate font-bold uppercase text-sm">{cardTitle}</p>
             <p className="card-subtitle mb-2 text-muted font-syncopate uppercase text-sm">{cardSubtitle}</p>
-            <a href={readMoreUrl} className="mb-3" target="_blank" rel="noopener noreferrer">
-                <img
-                    src={imageUrl}
-                    alt={imageAlt}
-                    draggable={false}
-                    className="card-img-top border-1 border-midnight rounded-1"
-                />
-            </a>
+
+            {readMoreUrl ? (
+                <a
+                    href={readMoreUrl}
+                    className="image-link mb-3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${cardTitle} (opens in a new tab)`}
+                >
+                    {image}
+                    <span className="image-link-badge font-syncopate uppercase text-xs" aria-hidden="true">
+                        View ↗
+                    </span>
+                </a>
+            ) : (
+                <div className="mb-3">{image}</div>
+            )}
+
             <div>
                 <p className="card-text font-courier text-sm">{cardText}</p>
             </div>
