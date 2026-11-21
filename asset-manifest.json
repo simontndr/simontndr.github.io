@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d28445a.css",
-    "main.js": "/static/js/main.749ae03d.js",
+    "main.css": "/static/css/main.c37b0196.css",
+    "main.js": "/static/js/main.f7335821.js",
     "static/js/453.f11b90ff.chunk.js": "/static/js/453.f11b90ff.chunk.js",
     "static/media/mbynLabs.png": "/static/media/mbynLabs.43328440c5883586bdcc.png",
     "static/media/kpop_platform.png": "/static/media/kpop_platform.f4540c105102f88c9dd2.png",
@@ -33,12 +33,12 @@
     "static/media/BGIS.webp": "/static/media/BGIS.f120a14f5000fc261b64.webp",
     "index.html": "/index.html",
     "static/media/marqueeStar.svg": "/static/media/marqueeStar.b763faa5887fcb9ba3722197cd681430.svg",
-    "main.2d28445a.css.map": "/static/css/main.2d28445a.css.map",
-    "main.749ae03d.js.map": "/static/js/main.749ae03d.js.map",
+    "main.c37b0196.css.map": "/static/css/main.c37b0196.css.map",
+    "main.f7335821.js.map": "/static/js/main.f7335821.js.map",
     "453.f11b90ff.chunk.js.map": "/static/js/453.f11b90ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d28445a.css",
-    "static/js/main.749ae03d.js"
+    "static/css/main.c37b0196.css",
+    "static/js/main.f7335821.js"
   ]
 }
