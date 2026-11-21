@@ -24,7 +24,7 @@
 
 .footer-bg::after {
   background:
-    radial-gradient(45% 40% at 62% 20%, rgba(247, 242, 235, 0.80), transparent 70%),
+    radial-gradient(45% 40% at 62% 20%, rgba(180, 212, 226, 0.8), transparent 70%),
     radial-gradient(30% 40% at 28% 82%, rgba(112, 150, 209, 0.40), transparent 70%);
   animation: drift-b 41s ease-in-out infinite alternate-reverse;
 }
