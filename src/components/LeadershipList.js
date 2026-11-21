@@ -1,27 +1,27 @@
 
 const leadership = [
   {
-    role: "HR Manager",
+    role: "01. HR Manager",
     organization: "Asian Business Leaders",
     url: "https://www.asianbusinessleaders.ca/",
   },
   {
-    role: "Project Coordinator",
+    role: "02. Project Coordinator",
     organization: "Enactus Guelph",
     url: "https://www.enactusguelph.com/",
   },
   {
-    role: "Peer Helper",
+    role: "03. Peer Helper",
     organization: "Cultural Diversity Services",
     url: "https://www.uoguelph.ca/studentexperience/cultural-diversity",
   },
   {
-    role: "Co-President",
+    role: "04. Co-President",
     organization: "Filipino Student Association",
     url: "https://www.instagram.com/uogfsa/",
   },
   {
-    role: "Representative",
+    role: "05. Representative",
     organization: "PCDR Advisory Committee",
     url: "https://www.uoguelph.ca/experiential-learning/pcdr",
   },

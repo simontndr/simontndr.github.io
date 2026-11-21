@@ -31,7 +31,7 @@ const HomePage = () => {
     cardTitle: 'Kpop Livestreaming Platform',
     cardSubtitle: 'NSERC USRA recipient',
     cardText: "Created to make global fan interactions more accessible through AI integration, this project emphasizes an inclusive UI/UX for multilingual audiences. This project taught me about instrumentation and firestore data security.",
-    techUsed: ['React', 'Firebase', 'Axios', 'Express', 'API Integration',]
+    techUsed: ['Data Collection', 'A/B Testing', 'AI Sentiment Analysis',]
   }
 
   const cardami = {
@@ -86,7 +86,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">
 
-    <Hero id="homeTop" readMore="#about" bgUrl={heroBg} imageUrl={simonSvg} text="welcome to simon's corner." textStyle={'font-manrope text-md md:text-xl text-midnight mb-4'}/>
+    <Hero id="homeTop" readMore="#about" bgUrl={heroBg} imageUrl={simonSvg} text="" textStyle={''}/>
     
     {/* Move navbar outside of padded container */}
     <Navbar />
@@ -118,7 +118,7 @@ const HomePage = () => {
             <div className="font-manrope text-midnight">
 
               <p className="mb-6">
-                My name is <span className="font-bold">Simon Tenedero</span> - a fourth-year <span className="font-bold">Software Engineering Co-op</span> student at the <span className="font-bold">University of Guelph</span> passionate about the intersection between business, technology and community building. 
+                My name is Simon Tenedero — a Software Engineering student at the <a href="https://www.uoguelph.ca/" className="underline" target="_blank" rel="noreferrer">University of Guelph</a> passionate about the intersection between business, technology and community building. 
                 Guided by these interests, I approach problem-solving through an interdisciplinary lens that emphasizes both innovation and user-centered design. 
                 When I’m not working, I enjoy exploring local trails, meeting new people and watching films.
               </p>

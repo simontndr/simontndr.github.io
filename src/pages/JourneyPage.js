@@ -47,7 +47,7 @@ const JourneyPage = () => {
     endDate: "Apr 2026",
     description: "As a Research Assistant, I helped prototype a livestreaming platform for global K-pop fans, integrating AI tools to support multilingual interaction. I learned how to conduct instrumentation for UI/UX research and ensure Firestore data was securely structured. This role taught me how to align technical development with academic goals and user inclusivity.",
     photoUrl: PhotoCard,
-    Quote: "Being a research assistant was like trading K-pop photo cards - you're constantly exchanging ideas, hoping to find the rare ones worth holding onto.",
+    Quote: "Being a research assistant was like trading K-pop photo cards — you're constantly exchanging ideas, hoping to find the rare ones worth holding onto.",
     reportUrl: "/researchAssistant#researchTop"
   };
 
@@ -70,7 +70,7 @@ const JourneyPage = () => {
     endDate: "Apr 2025",
     description: "As a Teaching Assistant, I supported students through weekly labs, code reviews, and project troubleshooting. I guided students on design principles and gave actionable feedback on python data analysis algorithms. Something I valued in this role was helping students build confidence in their technical and problem-solving skills.",
     photoUrl: Sheep,
-    Quote: "As a teaching assistant, I wanted to be like a stuffed animal - there for unyielding support and reliability.",
+    Quote: "As a teaching assistant, I wanted to be like a stuffed animal — there for unyielding support and reliability.",
     reportUrl: ""
   };
 
@@ -81,7 +81,7 @@ const JourneyPage = () => {
     endDate: "Dec 2026",
     description: "As a Residence Assistant, I supported student well-being through building an inclusive community and serving as a reliable point of contact during conflicts and emergencies. I learned how to lead with empathy, manage responsibilities under pressure, and plan events that brought people together. This role deepened my commitment to fostering safe, welcoming spaces for others.",
     photoUrl: House,
-    Quote: "Building a community is a lot like decorating a dollhouse - you always make sure there’s space for everyone.",
+    Quote: "Building a community is a lot like decorating a dollhouse — you always make sure there’s space for everyone.",
     reportUrl: ""
   };
 
@@ -97,7 +97,7 @@ const JourneyPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">
 
-    <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={journeySvg} text="Learn more about my experiences." textStyle={'font-manrope text-md md:text-xl text-midnight mb-4'} animate={true}/>
+    <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={journeySvg} text="" textStyle={''} animate={true}/>
 
     <Navbar />
     
@@ -109,7 +109,7 @@ const JourneyPage = () => {
           Each work experience I’ve had has helped shape my skills, mindset, and sense of purpose. Whether I was leading a team, supporting students, or building software, every role has taught me something valuable. I’m especially thankful for the mentors who challenged and supported me, and for the teammates who turned work into a space for connection, learning, and growth.
           </p>
           <p>
-            These experiences have laid a strong foundation, but I know I’m just getting started. I’m excited to keep growing - whether it be from taking on new challenges, learning from those around me, or contributing to meaningful work. Every step forward is a chance to build something better, and I look forward to wherever that journey leads next.
+            These experiences have laid a strong foundation, but I know I’m just getting started. I’m excited to keep growing — whether it be from taking on new challenges, learning from those around me, or contributing to meaningful work. Every step forward is a chance to build something better, and I look forward to wherever that journey leads next.
           </p>
         </div>
       </div>
