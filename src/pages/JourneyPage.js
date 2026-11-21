@@ -112,7 +112,7 @@ const JourneyPage = () => {
             Despite these different experiences, one common thread has emerged: data plays an important role in how organizations operate and make decisions. By combining my background in business, technology, and statistics, I've found success in using data to understand existing processes, identify opportunities for improvement, and support better-informed decisions.
           </p>
           <p>
-            Although my journey is just getting started, I'm already grateful for the mentors, and colleagues who have guided me along thus far. I'm looking forward to taking on new challenges, building my skills, and finding new ways to make an impact.
+            Although my journey is just getting started, I'm already grateful for the mentors and colleagues who have guided me along thus far. I'm looking forward to taking on new challenges, building my skills, and finding new ways to make an impact.
           </p>
 
         </div>
