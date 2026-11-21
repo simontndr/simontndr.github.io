@@ -22,7 +22,7 @@ const JourneyPage = () => {
     company: "RBC",
     startDate: "INCOMING",
     endDate: "W27",
-    description: "loading...",
+    description: "Joining RBC's Process Risk Centre of Excellence to support process risk management, strengthen internal controls, and improve operational resilience.",
     photoUrl: Brick,
     Quote:
       "Building the first line of defence, brick by brick!",
@@ -34,7 +34,7 @@ const JourneyPage = () => {
     company: "BGIS",
     startDate: "May 2026",
     endDate: "Aug 2026",
-    description: "As a Lease Data Analyst, I worked on the National Bank account within the Lease Administration team, gaining hands on experience with property data across a large corporate real estate portfolio. A lot of my work concentrated on optimizing reporting workflows, and maintaining accurate data for strategic decision making. This role strengthened my attention to detail, analytical thinking, and ability to apply data to real-world business processes.",
+    description: "Supported lease administration for National Bank's corporate real estate portfolio, focusing on data validation, reporting, and workflow improvements. Leveraged Excel and Power Query to streamline data management and support accurate, timely business decisions.",
     photoUrl: Hirono,
     Quote: "Working with data requires a sharp attention to detail. It's almost like you need a magnifying glass!",
     reportUrl: "/leaseAnalyst#leaseAnalystTop"
@@ -45,7 +45,7 @@ const JourneyPage = () => {
     company: "University of Guelph",
     startDate: "May 2025",
     endDate: "Apr 2026",
-    description: "As a Research Assistant, I helped prototype a livestreaming platform for global K-pop fans, integrating AI tools to support multilingual interaction. I learned how to conduct instrumentation for UI/UX research and ensure Firestore data was securely structured. This role taught me how to align technical development with academic goals and user inclusivity.",
+    description:"Contributed to the design of an AI-enabled livestreaming platform, exploring ways to improve accessibility for global K-pop communities. Conducted focus groups and supported requirements gathering to translate user feedback into platform improvements.",
     photoUrl: PhotoCard,
     Quote: "Being a research assistant was like trading K-pop photo cards — you're constantly exchanging ideas, hoping to find the rare ones worth holding onto.",
     reportUrl: "/researchAssistant#researchTop"
@@ -56,8 +56,7 @@ const JourneyPage = () => {
   company: "Kenna",
   startDate: "Sep 2025",
   endDate: "Dec 2025",
-  description:
-    "As a Web Application Developer, I built ERP features supporting BASF Agricultural Solutions, translating evolving business requirements into reliable, user-focused tools. This role strengthened my ability to write clear, maintainable production code while working closely with account managers and rigorous QA processes.",
+  description:"Developed ERP features for BASF Agricultural Solutions, translating evolving business requirements into functional tools for supply chain partners. Collaborated with account managers and QA teams to create reliable business workflows.",
   photoUrl: Duck,
     Quote: "When developing software, sometimes explaining the problem out loud is all it takes to find the solution.",
   reportUrl: "/webDeveloper#webDevTop"
@@ -68,7 +67,7 @@ const JourneyPage = () => {
     company: "University of Guelph",
     startDate: "Jan 2025",
     endDate: "Apr 2025",
-    description: "As a Teaching Assistant, I supported students through weekly labs, code reviews, and project troubleshooting. I guided students on design principles and gave actionable feedback on python data analysis algorithms. Something I valued in this role was helping students build confidence in their technical and problem-solving skills.",
+    description: "Oversaw students in their Agile Python data analysis projects, supporting sprint planning, progress tracking, and iterative development. Provided feedback on deliverables and helped teams navigate technical challenges while maintaining alignment with course objectives.",
     photoUrl: Sheep,
     Quote: "As a teaching assistant, I wanted to be like a stuffed animal — there for unyielding support and reliability.",
     reportUrl: ""
@@ -79,7 +78,7 @@ const JourneyPage = () => {
     company: "University of Guelph",
     startDate: "Aug 2024",
     endDate: "Dec 2026",
-    description: "As a Residence Assistant, I supported student well-being through building an inclusive community and serving as a reliable point of contact during conflicts and emergencies. I learned how to lead with empathy, manage responsibilities under pressure, and plan events that brought people together. This role deepened my commitment to fostering safe, welcoming spaces for others.",
+    description: "Supported a first-year residence community through proactive risk management and student engagement. Conducted building inspections, identified emerging community trends, and planned programming to address resident needs while fostering an inclusive environment.",
     photoUrl: House,
     Quote: "Building a community is a lot like decorating a dollhouse — you always make sure there’s space for everyone.",
     reportUrl: ""
@@ -106,11 +105,16 @@ const JourneyPage = () => {
         <h2 className="text-2xl md:text-3xl font-bold text-midnight font-syncopate uppercase mb-10">Overview</h2>
         <div className="text-midnight font-manrope text-left mb-[140px]">
           <p className="mb-6">
-          Each work experience I’ve had has helped shape my skills, mindset, and sense of purpose. Whether I was leading a team, supporting students, or building software, every role has taught me something valuable. I’m especially thankful for the mentors who challenged and supported me, and for the teammates who turned work into a space for connection, learning, and growth.
+            My experiences have shaped how I approach problems, collaborate with others, and understand how organizations operate.
+            Working across different environments, including government-funded research, corporate real estate, and financial services, has exposed me to diverse organizational cultures, workflows, and challenges.
+          </p>
+          <p className="mb-6">
+            Despite these different experiences, one common thread has emerged: data plays an important role in how organizations operate and make decisions. By combining my background in business, technology, and statistics, I've found success in using data to understand existing processes, identify opportunities for improvement, and support better-informed decisions.
           </p>
           <p>
-            These experiences have laid a strong foundation, but I know I’m just getting started. I’m excited to keep growing — whether it be from taking on new challenges, learning from those around me, or contributing to meaningful work. Every step forward is a chance to build something better, and I look forward to wherever that journey leads next.
+            Although my journey is just getting started, I'm already grateful for the mentors, and colleagues who have guided me along thus far. I'm looking forward to taking on new challenges, building my skills, and finding new ways to make an impact.
           </p>
+
         </div>
       </div>
       <MarqueeTag/>
