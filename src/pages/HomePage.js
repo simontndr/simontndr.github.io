@@ -26,12 +26,12 @@ const HomePage = () => {
 
   const kpopLivestream = {
     imageUrl: kpopImage,
-    readMoreUrl: 'https://nserc-crsng.canada.ca/en/awards-database/816860',
+    readMoreUrl: 'https://dl.acm.org/doi/pdf/10.1145/3715070.3747339',
     imageAlt: 'photo of kpop livestream',
     cardTitle: 'Kpop Livestreaming Platform',
     cardSubtitle: 'NSERC USRA recipient',
-    cardText: "Created to make global fan interactions more accessible through AI integration, this project emphasizes an inclusive UI/UX for multilingual audiences. This project taught me about instrumentation and firestore data security.",
-    techUsed: ['Data Collection', 'A/B Testing', 'AI Sentiment Analysis',]
+    cardText: "Explored ways to make global fan interactions more accessible through multilingual features and AI integration. Conducted focus groups to gather requirements that informed platform design.",
+    techUsed: ['User Research','AI Integration','Requirements Analysis'],
   }
 
   const cardami = {
@@ -40,26 +40,8 @@ const HomePage = () => {
     imageAlt: 'photo of cardami',
     cardTitle: 'Cardami',
     cardSubtitle: 'Best Web3 - SpurHacks 2025',
-    cardText: "Developed as a game where users complete unique challenges to collect cards, we sought to tackle the youth loneliness crisis through gamification. From designing the cards through Figma, I learned about brand identity, and visual storytelling.",
-    techUsed: ['React', 'Javascript', 'Firebase', 'Figma', 'Tailwind CSS'],
-  }
-
-  const discussionBoard = {
-    imageUrl: discussionBoardImage,
-    imageAlt: 'photo of Discussion Board',
-    cardTitle: 'Discussion Board',
-    cardSubtitle: '',
-    cardText: "Exploring social connection, this program allows users to register, create posts, and read entries from others. This project taught me about core object-oriented programming principles such as inheritance and polymorphism.",
-    techUsed: ['Java','OOP','Swing']
-  }
-
-  const mybnLabsLanding = {
-    imageUrl: mbynLabsImage,
-    imageAlt: 'photo of mybn Labs Landing Page',
-    cardTitle: 'mybn Labs Landing Page',
-    cardSubtitle: '',
-    cardText: "Designed to introduce company brand and mission, this website focuses on clean visuals, smooth animations, and responsivitity. This project taught me how to use Bootstrap and React to quickly build and iterate upon a production-ready design.",
-    techUsed: ['React','TypeScript','CSS','Bootstrap',]
+    cardText: "Developed a gamified platform addressing youth loneliness through interactive challenges and collectible cards. Contributed to product design and visual identity that maximized user engagement.",
+    techUsed: ['Product Design', 'Figma', 'Gamification',],
   }
 
   const statisticsCanada = {
@@ -67,8 +49,26 @@ const HomePage = () => {
     imageAlt: 'photo of data analysis',
     cardTitle: 'Statistics Canada Data Analysis',
     cardSubtitle: '',
-    cardText: "Exploring correlations of demographic characteristics on employment. This project taught me fundamentals surrounding data cleaning and statistical modelling.",
-    techUsed: ['Python','Pandas','MatPlotLib','Seaborn']
+    cardText: "Explored correlations between demographic characteristics and employment. Applied statistical modelling to uncover factors influencing employment outcomes.",
+    techUsed: ['Python','Pandas','MatPlotLib',]
+  }
+
+  const discussionBoard = {
+    imageUrl: discussionBoardImage,
+    imageAlt: 'photo of Discussion Board',
+    cardTitle: 'Discussion Board',
+    cardSubtitle: '',
+    cardText: "Created a discussion platform that enables users to share ideas, publish posts, and engage with community contributions. Structured application functionality around object-oriented design principles to support maintainability.",
+    techUsed: ['Application Design','Java','OOP']
+  }
+
+  const mybnLabsLanding = {
+    imageUrl: mbynLabsImage,
+    imageAlt: 'photo of mybn Labs Landing Page',
+    cardTitle: 'mybn Labs Landing Page',
+    cardSubtitle: '',
+    cardText: "Translated a company's brand and mission into a cohesive digital presence, emphasizing visual consistency, accessibility, and responsive design. Created marketing assets that focused on memorability.",
+    techUsed: ['Brand Identity', 'Web Design', 'UI/UX',]
   }
 
   const chirp = {
@@ -77,11 +77,11 @@ const HomePage = () => {
     imageAlt: 'photo of chirp',
     cardTitle: 'Chirp',
     cardSubtitle: 'GDSC Hacks 2025',
-    cardText: "Designed as a task tracker, we wanted to find a playful way to encourage healthy lifestyle changes. This project taught me about SVG animation, as I focused my attention on the creation of our platform's mascot.",
-    techUsed: ['React', 'Javascript','Figma', 'Google API'],
+    cardText: "Designed a playful habit-tracking experience to encourage healthier routines. Contributed to the platform's visual identity through mascot design and animation.",
+    techUsed: ['Product Design', 'Figma', 'Visual Storytelling'],
   }
 
-  const projectInfo = [kpopLivestream, cardami, discussionBoard, mybnLabsLanding, statisticsCanada, chirp];
+  const projectInfo = [kpopLivestream, cardami, statisticsCanada, discussionBoard, mybnLabsLanding, chirp];
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">
@@ -118,9 +118,12 @@ const HomePage = () => {
             <div className="font-manrope text-midnight">
 
               <p className="mb-6">
-                My name is Simon Tenedero — a Software Engineering student at the <a href="https://www.uoguelph.ca/" className="underline" target="_blank" rel="noreferrer">University of Guelph</a> passionate about the intersection between business, technology and community building. 
-                Guided by these interests, I approach problem-solving through an interdisciplinary lens that emphasizes both innovation and user-centered design. 
-                When I’m not working, I enjoy exploring local trails, meeting new people and watching films.
+                My name is Simon Tenedero — a Software Engineering student at the <a href="https://www.uoguelph.ca/" className="underline" target="_blank" rel="noreferrer">University of Guelph</a> passionate 
+                about using data to empower better decisions for both people and organizations.
+              </p>
+
+              <p className="mb-6">
+                Outside of work, you'll find me exploring local trails, meeting new people and watching cheesy 2000s films.
               </p>
 
             </div>
