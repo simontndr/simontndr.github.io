@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f463c069.css",
-    "main.js": "/static/js/main.c03aaa69.js",
+    "main.js": "/static/js/main.2251369e.js",
     "static/js/453.f11b90ff.chunk.js": "/static/js/453.f11b90ff.chunk.js",
     "static/media/mbynLabs.png": "/static/media/mbynLabs.43328440c5883586bdcc.png",
     "static/media/kpop_platform.png": "/static/media/kpop_platform.f4540c105102f88c9dd2.png",
@@ -34,11 +34,11 @@
     "index.html": "/index.html",
     "static/media/marqueeStar.svg": "/static/media/marqueeStar.b763faa5887fcb9ba3722197cd681430.svg",
     "main.f463c069.css.map": "/static/css/main.f463c069.css.map",
-    "main.c03aaa69.js.map": "/static/js/main.c03aaa69.js.map",
+    "main.2251369e.js.map": "/static/js/main.2251369e.js.map",
     "453.f11b90ff.chunk.js.map": "/static/js/453.f11b90ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f463c069.css",
-    "static/js/main.c03aaa69.js"
+    "static/js/main.2251369e.js"
   ]
 }
