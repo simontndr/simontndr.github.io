@@ -8,12 +8,12 @@ import Footer from '../components/Footer';
 import journeyBg from '../assets/hero-images/journeyHero.webp';
 import journeySvg from "../assets/svgs/journey.svg";
 
-import Duck from '../assets/experience-trinkets/duck.png';
-import House from '../assets/experience-trinkets/house.png';
-import Sheep from '../assets/experience-trinkets/sheep.png';
-import PhotoCard from '../assets/experience-trinkets/photoCard.png';
-import Brick from '../assets/experience-trinkets/brick.png';
-import Hirono from '../assets/experience-trinkets/hirono.png';
+import Duck from '../assets/experience-trinkets/duck.webp';
+import House from '../assets/experience-trinkets/house.webp';
+import Sheep from '../assets/experience-trinkets/sheep.webp';
+import PhotoCard from '../assets/experience-trinkets/photoCard.webp';
+import Brick from '../assets/experience-trinkets/brick.webp';
+import Hirono from '../assets/experience-trinkets/hirono.webp';
 
 const JourneyPage = () => {
 
