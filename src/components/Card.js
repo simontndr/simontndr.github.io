@@ -25,7 +25,7 @@ const Card = ({ imageUrl, readMoreUrl, imageAlt, cardTitle, cardSubtitle, cardTe
                 >
                     {image}
                     <span className="image-link-badge font-syncopate uppercase text-xs" aria-hidden="true">
-                        View ↗
+                        View &#8599;&#xFE0E;
                     </span>
                 </a>
             ) : (

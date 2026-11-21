@@ -40,7 +40,7 @@ const WorkExperience = ({experience}) => {
               >
                 Co-op Report
                 <span className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1">
-                  ↗
+                  &#8599;&#xFE0E;
                 </span>
               </Link>
             )}
