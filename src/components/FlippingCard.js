@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { useSpring, animated as a, to } from "@react-spring/web";
 import simonSvg from "../assets/svgs/simon.svg";
-import BACard from "../assets/flipping-card-images/ba-card.png";
-import sonny from "../assets/flipping-card-images/sonny.png";
-import calico from "../assets/flipping-card-images/calico.png";
-import marble from "../assets/flipping-card-images/marble.png";
+import BACard from "../assets/flipping-card-images/ba-card.webp";
+import sonny from "../assets/flipping-card-images/sonny.webp";
+import calico from "../assets/flipping-card-images/calico.webp";
+import marble from "../assets/flipping-card-images/marble.webp";
 
 // ---------------------------------------------------------------------------
 // Endless idle animations (bob, float, pulse) are plain CSS keyframes.

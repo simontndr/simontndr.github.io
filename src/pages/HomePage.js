@@ -12,12 +12,12 @@ import CardCarousel from "../components/CardCarousel.js";
 import FooterBanner from "../components/FooterBanner.js";
 import Footer from "../components/Footer.js";
 
-import kpopImage from '../assets/project-thumbnails/kpop_platform.png';
-import cardamiImage from '../assets/project-thumbnails/cardami.png';
-import chirpImage from '../assets/project-thumbnails/chirp.png';
-import discussionBoardImage from '../assets/project-thumbnails/discussionBoard.png';
-import mbynLabsImage from '../assets/project-thumbnails/mbynLabs.png';
-import dataAnalysis from '../assets/project-thumbnails/dataAnalysis.png';
+import kpopImage from '../assets/project-thumbnails/kpop_platform.webp';
+import cardamiImage from '../assets/project-thumbnails/cardami.webp';
+import chirpImage from '../assets/project-thumbnails/chirp.webp';
+import discussionBoardImage from '../assets/project-thumbnails/discussionBoard.webp';
+import mbynLabsImage from '../assets/project-thumbnails/mbynLabs.webp';
+import dataAnalysis from '../assets/project-thumbnails/dataAnalysis.webp';
 
 import { Link } from 'react-router-dom';
 import '../components/styles/movingBorder.css'
