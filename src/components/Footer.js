@@ -1,6 +1,7 @@
 import logo from '../assets/logo.png';
 import simonSvg from '../assets/svgs/simon.svg';
 import BackUpSvg from '../assets/svgs/back-up.svg';
+import './styles/components.css'
 import './styles/footer.css'
 import { Link, useLocation } from 'react-router-dom';
 
