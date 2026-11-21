@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.961b483a.css",
-    "main.js": "/static/js/main.94db1d1e.js",
+    "main.css": "/static/css/main.0cf96b11.css",
+    "main.js": "/static/js/main.c3f2d9d3.js",
     "static/js/453.f11b90ff.chunk.js": "/static/js/453.f11b90ff.chunk.js",
     "static/media/mbynLabs.png": "/static/media/mbynLabs.43328440c5883586bdcc.png",
     "static/media/kpop_platform.png": "/static/media/kpop_platform.f4540c105102f88c9dd2.png",
@@ -21,7 +21,7 @@
     "static/media/dataAnalysis.png": "/static/media/dataAnalysis.57998c06f750ad759606.png",
     "static/media/chirp.png": "/static/media/chirp.69823f1872e090e4696b.png",
     "static/media/discussionBoard.png": "/static/media/discussionBoard.06768b3295f42e7c38fc.png",
-    "static/media/journeyHero.webp": "/static/media/journeyHero.91433f1a8e33ebe28503.webp",
+    "static/media/journeyHero.webp": "/static/media/journeyHero.d4ae754ad4113e9bbb57.webp",
     "static/media/marble.png": "/static/media/marble.f22056fc8dbb9c09e0a4.png",
     "static/media/reynoldsBlurTransp.webp": "/static/media/reynoldsBlurTransp.ad7b37ba0d3babe18e0b.webp",
     "static/media/kennaBlurTransp.webp": "/static/media/kennaBlurTransp.532b59bc30662a3296ba.webp",
@@ -33,12 +33,12 @@
     "static/media/BGIS.webp": "/static/media/BGIS.f120a14f5000fc261b64.webp",
     "index.html": "/index.html",
     "static/media/marqueeStar.svg": "/static/media/marqueeStar.b763faa5887fcb9ba3722197cd681430.svg",
-    "main.961b483a.css.map": "/static/css/main.961b483a.css.map",
-    "main.94db1d1e.js.map": "/static/js/main.94db1d1e.js.map",
+    "main.0cf96b11.css.map": "/static/css/main.0cf96b11.css.map",
+    "main.c3f2d9d3.js.map": "/static/js/main.c3f2d9d3.js.map",
     "453.f11b90ff.chunk.js.map": "/static/js/453.f11b90ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.961b483a.css",
-    "static/js/main.94db1d1e.js"
+    "static/css/main.0cf96b11.css",
+    "static/js/main.c3f2d9d3.js"
   ]
 }
