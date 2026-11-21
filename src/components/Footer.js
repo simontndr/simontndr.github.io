@@ -1,7 +1,7 @@
 import logo from '../assets/logo.png';
 import simonSvg from '../assets/svgs/simon.svg';
 import BackUpSvg from '../assets/svgs/back-up.svg';
-import './styles/components.css'
+import './styles/footer.css'
 import { Link, useLocation } from 'react-router-dom';
 
 const Footer = ({topRef}) => {
@@ -11,7 +11,14 @@ const Footer = ({topRef}) => {
   const homeLink = location.pathname === '/' ? "#homeTop" : "/#homeTop";
 
   return (
-    <footer id="connect" className="w-full bg-gradient-to-b from-dawn to-sky px-8 pt-20 pb-5 flex flex-col items-center justify-between border-t border-midnight">
+    <footer
+    id="connect"
+    className="relative isolate overflow-hidden w-full bg-dawn px-8 pt-20 pb-5 flex flex-col items-center justify-between border-t border-midnight"
+    >
+
+        <div aria-hidden="true" className="footer-bg">
+            <div className="footer-grain" />
+        </div>
 
         {/* navigation + svg logo */}
         <div className="flex w-full flex-wrap mb-20 items-start space-y-8 justify-around">
