@@ -14,13 +14,13 @@ const WebDeveloperPage = () => (
       readMore="#abstract"
       bgUrl={KennaBg}
       imageUrl={""}
-      text="My Experience as a Web Application Developer at Kenna"
+      text="Being a Web Application Developer at Kenna"
       textStyle="max-w-5xl text-4xl md:text-5xl font-bold text-midnight font-syncopate uppercase"
       animate={false}
     />
 
     {/* Content */}
-    <div className="mx-auto font-courier">
+    <div className="mx-auto font-manrope">
 
       {/* Abstract / Introduction */}
       <section className="flex justify-center px-10 py-20">

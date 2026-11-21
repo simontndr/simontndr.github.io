@@ -97,14 +97,14 @@ const JourneyPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">
 
-    <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={journeySvg} text="Learn more about my experiences." textStyle={'font-courier font-bold text-md md:text-xl text-midnight mb-4'} animate={true}/>
+    <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={journeySvg} text="Learn more about my experiences." textStyle={'font-manrope text-md md:text-xl text-midnight mb-4'} animate={true}/>
 
     <Navbar />
     
     <div id="overview" className="flex flex-col items-center justify-center w-full pt-20">
       <div className="md:w-[60%] px-8">
         <h2 className="text-2xl md:text-3xl font-bold text-midnight font-syncopate uppercase mb-10">Overview</h2>
-        <div className="text-midnight font-courier text-left mb-[140px]">
+        <div className="text-midnight font-manrope text-left mb-[140px]">
           <p className="mb-6">
           Each work experience I’ve had has helped shape my skills, mindset, and sense of purpose. Whether I was leading a team, supporting students, or building software, every role has taught me something valuable. I’m especially thankful for the mentors who challenged and supported me, and for the teammates who turned work into a space for connection, learning, and growth.
           </p>

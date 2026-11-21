@@ -35,14 +35,14 @@ const Footer = ({topRef}) => {
                 </nav>
 
                 {/* Contact links */}
-                <div className="flex flex-wrap gap-4 font-courier">
-                <div className="text-midnight font-courier">
+                <div className="flex flex-wrap gap-4 font-manrope">
+                <div className="text-midnight font-manrope opacity-85 hover:opacity-100">
                     steneder@uoguelph.ca
                 </div>
-                <Link to="https://www.linkedin.com/in/simontenedero/" target="_blank" rel="noopener noreferrer" className="text-midnight font-courier underline hover:font-bold">
+                <Link to="https://www.linkedin.com/in/simontenedero/" target="_blank" rel="noopener noreferrer" className="text-midnight font-manrope underline opacity-85 hover:opacity-100">
                     LinkedIn
                 </Link>
-                <Link to="https://github.com/simontndr" target="_blank" rel="noopener noreferrer" className="text-midnight font-courier underline hover:font-bold">
+                <Link to="https://github.com/simontndr" target="_blank" rel="noopener noreferrer" className="text-midnight font-manrope underline opacity-85 hover:opacity-100">
                     GitHub
                 </Link>
                 </div>
@@ -57,7 +57,7 @@ const Footer = ({topRef}) => {
         </Link>
 
         {/* Bottom section - Copyright */}
-        <div className="text-center text-xs text-midnight font-courier">
+        <div className="text-center text-xs text-midnight font-manrope">
         © 2025 simon tenedero (made with care.)
         </div>
 

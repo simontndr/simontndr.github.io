@@ -49,7 +49,7 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     to={item.to}
-                    className={`text-midnight hover:underline ${item.name==='connect' ? 'font-bold font-syncopate uppercase text-xs' : 'font-courier'}`}
+                    className={`text-midnight hover:underline ${item.name==='connect' ? 'font-bold font-syncopate uppercase text-xs' : 'font-manrope'}`}
                   >
                     {item.name}
                   </Link>
@@ -130,7 +130,7 @@ const Navbar = () => {
                     key={item.name}
                     to={item.to}
                     onClick={closeMenu}
-                     className={`block  mb-4 text-midnight hover:underline ${item.name==='connect' ? 'font-bold font-syncopate uppercase text-xs mt-1' : 'font-courier'}`}
+                     className={`block  mb-4 text-midnight hover:underline ${item.name==='connect' ? 'font-bold font-syncopate uppercase text-xs mt-1' : 'font-manrope'}`}
                   >
                     {item.name}
                   </Link>

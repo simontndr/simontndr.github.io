@@ -33,7 +33,7 @@ const Card = ({ imageUrl, readMoreUrl, imageAlt, cardTitle, cardSubtitle, cardTe
             )}
 
             <div>
-                <p className="card-text font-courier text-sm">{cardText}</p>
+                <p className="card-text font-manrope text-sm">{cardText}</p>
             </div>
             <div className="languages-used flex items-center flex-wrap gap-2 mt-2">
                 {techUsed && techUsed.map((tech) => (

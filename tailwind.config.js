@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'courier': ['Courier New', 'monospace'],
         'syncopate': ['Syncopate', 'sans-serif'],
+        'manrope': ['Manrope', 'sans-serif'],
       },
       fontSize: {
         'xs': '0.75rem',     // 12px

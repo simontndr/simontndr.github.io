@@ -14,13 +14,13 @@ const ResearchAssistantPage = () => (
       readMore="#abstract" 
       bgUrl={ResearchBg} 
       imageUrl={""} 
-      text="My Experience as a Research Assistant at CCMPS" 
-      textStyle={'max-w-5xl text-4xl md:text-5xl font-bold text-midnight font-syncopate uppercase'} 
+      text="Being a Research Assistant at CCMPS" 
+      textStyle={'max-w-5xl text-4xl font-bold text-midnight font-syncopate uppercase'} 
       animate={false}
     />
 
     {/* Content */}
-    <div className="mx-auto font-courier">
+    <div className="mx-auto font-manrope">
 
       {/* Abstract/Introduction */}
       <section className="flex justify-center px-10 py-20">

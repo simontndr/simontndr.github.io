@@ -9,8 +9,8 @@ const NotFoundPage = () => (
       className="w-[300px] md:w-[400px] lg:w-[500px]"
     />
     <h1 className="text-4xl font-bold mb-4 font-syncopate uppercase mt-4">404 - Page Not Found</h1>
-    <p className="text-gray-600 mb-2 font-courier">Uh oh ... The page you're looking for doesn't exist.</p>
-    <p className="text-gray-500 italic mb-6 font-courier">maybe try again?</p>
+    <p className="text-gray-600 mb-2 font-manrope">Uh oh ... The page you're looking for doesn't exist.</p>
+    <p className="text-gray-500 italic mb-6 font-manrope">maybe try again?</p>
     <Link to="/" className="font-syncopate underline hover:font-bold">
       Go back home
     </Link>

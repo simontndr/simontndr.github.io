@@ -21,7 +21,7 @@ const Preloader = ({ onComplete }) => {
         SIMON TENEDERO
       </h1>
 
-      <p className="font-courier text-sm text-midnight mt-6">
+      <p className="font-manrope text-sm text-midnight mt-6">
         Just a moment, getting things ready...
       </p>
 
@@ -32,7 +32,7 @@ const Preloader = ({ onComplete }) => {
         />
       </div>
 
-      <p className="font-courier text-xs text-midnight/60 mt-3">
+      <p className="font-manrope text-xs text-midnight/60 mt-3">
         {Math.floor(progress)}%
       </p>
     </div>
