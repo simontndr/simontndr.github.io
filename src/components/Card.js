@@ -10,8 +10,6 @@ const Card = ({ imageUrl, readMoreUrl, imageAlt, cardTitle, cardSubtitle, cardTe
                 <img
                     src={imageUrl}
                     alt={imageAlt}
-                    decoding="async"
-                    loading="lazy"
                     draggable={false}
                     className="card-img-top border-1 border-midnight rounded-1"
                 />
