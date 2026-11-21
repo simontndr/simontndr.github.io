@@ -97,7 +97,7 @@ const JourneyPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">
 
-    <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={journeySvg} text="Learn more about my experiences." textStyle={'font-courier font-bold text-md md:text-xl text-midnight mb-4'} animate={false}/>
+    <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={journeySvg} text="Learn more about my experiences." textStyle={'font-courier font-bold text-md md:text-xl text-midnight mb-4'} animate={true}/>
 
     <Navbar />
     
