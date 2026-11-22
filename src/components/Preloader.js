@@ -1,19 +1,24 @@
-
 import { useEffect, useState } from "react";
 
-const Preloader = ({ onComplete }) => {
+const Preloader = ({ ready, onComplete }) => {
   const [progress, setProgress] = useState(0);
 
+  // Fake progress up to 90% while waiting
   useEffect(() => {
+    if (ready) return;
     const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 90) return prev;
-        return Math.min(prev + Math.random() * 12, 90);
-      });
+      setProgress((prev) => Math.min(prev + Math.random() * 12, 90));
     }, 150);
-
     return () => clearInterval(interval);
-  }, []);
+  }, [ready]);
+
+  // When ready: fill to 100, let the bar animate, then hand off
+  useEffect(() => {
+    if (!ready) return;
+    setProgress(100);
+    const timeout = setTimeout(() => onComplete(), 600);
+    return () => clearTimeout(timeout);
+  }, [ready, onComplete]);
 
   return (
     <div className="fixed inset-0 z-[9999] bg-moon flex flex-col items-center justify-center">

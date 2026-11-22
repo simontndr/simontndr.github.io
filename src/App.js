@@ -1,5 +1,4 @@
-
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
@@ -14,20 +13,19 @@ import Preloader from './components/Preloader';
 
 import './App.css';
 
+const MINIMUM_DURATION = 2000;
+
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [showPreloader, setShowPreloader] = useState(true);
+  const [ready, setReady] = useState(false);
 
   useEffect(() => {
+    let timeoutId;
     const startTime = Date.now();
-    const minimumDuration = 2000;
 
     const handleLoad = () => {
-      const elapsedTime = Date.now() - startTime;
-      const remainingTime = Math.max(0, minimumDuration - elapsedTime);
-
-      setTimeout(() => {
-        setIsLoading(false);
-      }, remainingTime);
+      const remaining = Math.max(0, MINIMUM_DURATION - (Date.now() - startTime));
+      timeoutId = setTimeout(() => setReady(true), remaining);
     };
 
     if (document.readyState === 'complete') {
@@ -38,13 +36,18 @@ function App() {
 
     return () => {
       window.removeEventListener('load', handleLoad);
+      clearTimeout(timeoutId);
     };
   }, []);
+
+  const handlePreloaderComplete = useCallback(() => setShowPreloader(false), []);
 
   return (
     <div className="App min-h-screen bg-gradient-to-b from-moon to-asian-pear">
 
-      {isLoading && <Preloader />}
+      {showPreloader && (
+        <Preloader ready={ready} onComplete={handlePreloaderComplete} />
+      )}
 
       <ScrollToHashElement />
 
