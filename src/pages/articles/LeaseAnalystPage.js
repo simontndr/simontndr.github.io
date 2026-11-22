@@ -1,266 +1,105 @@
-import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
-import Hero from '../../components/Hero';
-import KennaBg from '../../assets/hero-images/BGIS.webp';
-import MarqueeTag from '../../components/MarqueeTag';
-import FooterBanner from '../../components/FooterBanner';
 
-const WebDeveloperPage = () => (
-  <div className="min-h-screen bg-gray-50">
-    <Navbar />
+import Report from "../../components/Report";
 
-    <Hero
-      id="leaseAnalystTop"
-      readMore="#abstract"
-      bgUrl={KennaBg}
-      imageUrl={""}
-      text="Being a Lease Data Analyst at BGIS"
-      textStyle="max-w-5xl text-4xl font-bold text-midnight font-syncopate uppercase"
-      animate={false}
-    />
+// Placeholder logo — replace with your actual BGIS logo asset when available.
+const bgisLogo =
+  "data:image/svg+xml;utf8," +
+  encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+      <rect width="96" height="96" rx="20" fill="#17365D"/>
+      <text x="48" y="57" font-size="27" font-weight="700"
+        text-anchor="middle" font-family="sans-serif" fill="#FFFFFF">BGIS</text>
+    </svg>
+  `);
 
-    {/* Content */}
-    <div className="mx-auto font-manrope">
+const LeaseAnalystPage = () => (
+  <Report
+    logo={bgisLogo}
+    companyName="BGIS"
+    companyUrl="https://www.bgis.com"
+    title="My Experience at BGIS"
+    topId="leaseAnalystTop"
+    intro="From May to August 2026, I worked as a Lease Data Analyst at BGIS, supporting lease administration for the National Bank account. My responsibilities focused on property data validation, reporting, process automation, and stakeholder coordination. Through Excel and Power Query solutions, I helped improve the accuracy and consistency of recurring administrative workflows while gaining practical experience in commercial real estate operations."
 
-      {/* Abstract / Introduction */}
-      <section className="flex justify-center px-10 py-20">
-        <div className="max-w-3xl">
-          <h2
-            id="abstract"
-            className="text-2xl md:text-3xl font-bold text-midnight font-syncopate uppercase mb-10"
-          >
-            Abstract
-          </h2>
-          <p className="text-gray-700">
-            This report outlines my experience from May to August 2026 as a Lease Data Analyst at BGIS in Markham, Ontario. 
-            During this internship, I worked on the National Bank account, supporting the abstraction, validation, and maintenance of key property and lease data. 
-            My work directly improved data visibility, and supported day-to-day operations and strategic decision-making. 
-            Overall, this internship gave me practical experience in data management, process improvement, reporting, and cross-functional communication within a corporate real estate environment.
-          </p>
-        </div>
-      </section>
+    sections={[
+      {
+        id: "about",
+        group: 1,
+        title: "About BGIS",
+        tagline: "Enabling Innovation.",
+        content: [
+          "BGIS is a global provider of integrated facilities management and real estate services, supporting organizations across multiple industries. Its services span facilities management, asset management, project delivery, sustainability, and real estate operations.",
+          "During my work term, I supported the Lease Administration team managing property and lease information for the National Bank account. Accurate property data was essential to supporting billing, reporting, and day-to-day client operations."
+        ],
+      },
+      {
+        id: "role",
+        group: 2,
+        title: "A glimpse into my role",
+        content: [
+          "I supported the management and validation of property information across the National Bank portfolio, helping ensure data used in lease administration and financial processes remained accurate and reliable.",
+          "My work involved coordinating with internal teams and external stakeholders to resolve discrepancies, maintain property records, and support recurring administrative requirements. Working in a bilingual environment also required communicating property information in both English and French.",
+          "I also contributed to process documentation and knowledge sharing by organizing workflows into clear, repeatable steps. These activities reinforced the importance of standardized procedures, accurate records, and effective communication in supporting business operations."
+        ],
+      },
+      {
+        id: "tools",
+        group: 2,
+        title: "Tools",
+        tools: [
+          "Excel",
+          "Power Query",
+          "XLOOKUP",
+          "VBA",
+          "Outlook",
+          "MS Teams",
+          "SharePoint"
+        ],
+      },
+      {
+        id: "accomplishments",
+        group: 2,
+        title: "Key Accomplishments",
+        content: [
+          <ul key="accomplishments" className="list-disc space-y-3 pl-5">
+            <li>
+              <strong>Streamlined property tax data management:</strong>{" "}
+              Consolidated property tax billing information and developed an
+              XLOOKUP-based tracking system to improve data visibility,
+              validation, and discrepancy identification.
+            </li>
+            <li>
+              <strong>Automated recurring workflows:</strong>{" "}
+              Built Excel and Power Query solutions for recurring data updates
+              and developed a VBA/Outlook macro to standardize group email
+              generation.
+            </li>
+            <li>
+              <strong>Strengthened process documentation:</strong>{" "}
+              Prepared Year End Adjustment and Rental Advice Notice
+              documentation and organized recurring workflows into repeatable
+              procedures to support consistency and knowledge transfer.
+            </li>
+          </ul>
+        ],
+      },
+      {
+        id: "takeaways",
+        group: 2,
+        title: "What I learned",
+        content: [
+          "This experience strengthened my understanding of how data quality directly affects business operations. Even small inconsistencies in property records can create downstream administrative challenges, making validation and clear documentation essential.",
+          "I also learned that effective process improvement begins with understanding existing workflows, identifying points of friction, and developing practical solutions that improve consistency and usability. This experience reinforced my interest in the intersection of business processes, data, and technology."
+        ],
+      },
+    ]}
 
-      {/* Information about the Employer */}
-      <section className="flex flex-col items-center bg-jicama">
-        <MarqueeTag />
-
-        <div className="max-w-4xl mx-10 my-20">
-          <h3 className="text-2xl md:text-3xl text-midnight font-syncopate uppercase mb-10">
-            About BGIS
-          </h3>
-
-          <div className="space-y-4 text-gray-700">
-            <p>
-              <a href="https://www.bgis.com" className="underline" target="_blank" rel="noreferrer">BGIS</a> is a global provider of integrated facilities management and real estate services, with a history dating back to 1992. 
-              The company was originally established in Canada as a joint venture between Brookfield and Johnson Controls. 
-              In 2015, the organization was rebranded as Brookfield Global Integrated Solutions under Brookfield Asset Management, 
-              reflecting its expansion and growing range of integrated real estate and facilities services. 
-              In 2019, Brookfield Asset Management sold its interest in the company, and the organization subsequently adopted the name BGIS.
-            </p>
-
-            <p>
-              Today, BGIS provides a broad range of services, including facilities management, project delivery, energy and sustainability solutions, 
-              asset management, workplace advisory, and real estate services. The company supports clients across a variety of industries, 
-              helping organizations manage their real estate assets, improve operational efficiency, and create value through data-driven 
-              and technology-enabled solutions. BGIS manages a large portfolio of facilities and real estate assets across multiple countries, 
-              making accurate property and lease information an important component of its operations.
-            </p>
-
-            <p>
-              BGIS is headquartered in Markham, Ontario, and maintains a collaborative work environment in which employees 
-              from various disciplines work together to support client needs. Teams involved in lease administration, property management, 
-              transactions, facilities management, and strategic real estate services frequently collaborate to ensure that client information 
-              is accurate and business requirements are addressed effectively.
-            </p>
-          </div>
-        </div>
-
-        <MarqueeTag />
-      </section>
-
-      {/* Job Description */}
-      <section className="mb-12 flex justify-center px-10 py-20">
-        <div className="max-w-4xl flex flex-col items-center">
-          <h3 className="text-2xl md:text-3xl text-midnight font-syncopate uppercase mb-10">
-            A Glimpse into My Role
-          </h3>
-
-          <div className="space-y-4 text-gray-700">
-            <p>
-              As a Lease Data Analyst at BGIS, I supported the Lease Administration team responsible for managing property and lease data for the National Bank account. 
-              My role involved validating, maintaining, and organizing property information to ensure that data used for operational and administrative processes was accurate and reliable. 
-              I also contributed to reporting and process improvements by developing Excel and Power Query solutions that reduced manual work and made recurring data updates more efficient.
-            </p>
-
-            <p>
-              A key aspect of this role was communicating with internal teams and external stakeholders to resolve data discrepancies and ensure that information was communicated clearly and accurately. 
-              Working in a bilingual environment, I regularly handled property information and correspondence in both English and French, 
-              requiring attention to detail when interpreting and communicating business information. 
-              This experience strengthened my ability to work across different functions and adapt my communication to different stakeholders. 
-              I applied concepts from coursework such as statistics and accounting while developing new skills in commercial real estate, data validation, and reporting automation.
-            </p>
-          </div>
-
-          {/* Responsibilities */}
-          <div className="mt-10 max-w-2xl">
-            <h4 className="text-lg font-semibold text-midnight mb-3 uppercase">
-              Highlights of Responsibilities
-            </h4>
-            <ul className="pl-4 list-disc list-outside space-y-2 text-gray-700 text-left">
-              <li>
-                Developed and maintained Excel and Power Query workflows to automate recurring data updates and reduce manual spreadsheet preparation
-              </li>
-              <li>
-                Consolidated and standardized property tax billing information across multiple spreadsheets to improve data accuracy and support centralized correspondence
-              </li>
-              <li>
-                Created a property tax bill tracking system using XLOOKUP and structured Excel tables to efficiently monitor billing information and identify data discrepancies
-              </li>
-              <li>
-                Developed a VBA macro to automate group email generation through Outlook, improving the efficiency and consistency of recurring communications
-              </li>
-              <li>
-                Prepared and updated documentation for Year End Adjustments and Rental Advice Notices to support standardized processes and knowledge transfer within the team
-              </li>
-              <li>
-                Communicated with internal teams, landlords, facility managers, and other stakeholders to resolve property data discrepancies and coordinate administrative requirements
-              </li>
-            </ul>
-          </div>
-
-          {/* Business Tools */}
-          <div className="mt-10">
-            <h4 className="text-lg font-semibold text-midnight mb-3 uppercase">
-              Business Tools
-            </h4>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              {[
-                'Excel',
-                'Power Query',
-                'RealSuite',
-                'MS Outlook',
-                'SharePoint',
-                'VBA / Excel Macros',
-                'XLOOKUP / Excel Tables',
-                'MS Teams'
-              ].map((tech) => (
-                <span
-                  key={tech}
-                  className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Learning */}
-          <div className="mt-10 max-w-4xl">
-            <h4 className="text-lg font-semibold text-midnight mb-3 uppercase">
-              An Interesting Thing I Learned
-            </h4>
-            <p className="text-gray-700">
-              One of the most valuable lessons I learned during this role was the importance of data accuracy in supporting business operations. 
-              Working with property and lease information showed me how even small inconsistencies can affect downstream processes and stakeholders, 
-              reinforcing the need for careful data validation. I also gained a greater appreciation for process improvement and automation, 
-              seeing how tools such as Excel, Power Query, and VBA could reduce manual effort and improve consistency. 
-              This taught me that effective automation begins with understanding the underlying business process rather than simply applying complex technology. 
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Goals and Learning Outcomes */}
-      <section className="mb-12 flex flex-col items-center bg-jicama">
-        <MarqueeTag />
-
-        <div className="max-w-2xl mx-10 my-20">
-          <h3 className="text-2xl md:text-3xl text-midnight font-syncopate uppercase mb-10">
-            Goals & Learning Outcomes
-          </h3>
-
-          <div className="space-y-10">
-            <div className="border-l-4 border-midnight pl-6 text-left">
-              <h4 className="text-lg font-semibold text-midnight mb-2 uppercase">
-                	Expand cross-functional knowledge by building professional relationships with employees from different work streams through coffee chats.
-              </h4>
-              <p className="text-gray-700">
-                	Through coffee chats and informal conversations with employees from different teams, 
-                  I expanded my understanding of how various work streams contribute to the organization, 
-                  its overall goals and specific client accounts. These conversations helped me see how my work in Lease Administration 
-                  connected to the broader business and exposed me to different roles and career paths. 
-                  As a computing student with a business minor, I was particularly interested in learning how technology, data, 
-                  and business processes intersect across different departments. From these conversations, 
-                  I saw tangible examples of how technical and analytical skills could be applied beyond traditional software development. 
-                  I also became more comfortable initiating professional conversations, asking thoughtful questions, and learning from people with different areas of expertise. 
-                  Overall, this goal encouraged me to look beyond my immediate responsibilities and develop a more well-rounded understanding of the organization.	
-              </p>
-            </div>
-
-            <div className="border-l-4 border-midnight pl-6 text-left">
-              <h4 className="text-lg font-semibold text-midnight mb-2 uppercase">
-                	Improve process documentation and organizational skills by creating a standardized operating procedure (SOP) for recurring lease administration tasks.	
-              </h4>
-              <p className="text-gray-700">
-                Throughout my work term, I strengthened my organizational and analytical skills by documenting recurring processes and breaking complex workflows into clear, 
-                logical steps. Working with lease administration tasks often involved multiple files, tools, and sources of information, 
-                requiring me to understand both how and why each step was completed. Through this process, I learned that effective documentation 
-                involves more than simply listing instructions; it requires anticipating where someone unfamiliar with the task may need additional context or clarification. 
-                I became more intentional about identifying key decision points, organizing information, and communicating best practices clearly. 
-                This experience also reinforced the importance of knowledge sharing, as clear documentation can improve consistency and make recurring processes easier for future team members to understand. 
-                Overall, this goal strengthened my ability to critically analyze workflows and identify ways to make processes more structured, accessible, and repeatable.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-midnight pl-6 text-left">
-              <h4 className="text-lg font-semibold text-midnight mb-2 uppercase">
-                Strengthen data visualization and analytical skills by developing a simple dashboard to present lease data and reporting insights more effectively.	
-              </h4>
-              <p className="text-gray-700">
-                Throughout my work term, I strengthened my technical and analytical skills by exploring ways to organize, analyze, and present lease-related data more effectively. 
-                Working with large spreadsheets showed me that data is most valuable when it is accessible and easy for others to interpret. 
-                I explored tools such as Excel and Power BI to better understand how information could be summarized through metrics, trends, and visualizations. 
-                Through this process, I developed a greater appreciation for the importance of properly structuring and preparing data before creating reports. 
-                This experience also showed me how technical skills can be applied to solve business problems and improve decision-making. 
-                Overall, this goal strengthened my confidence in using technology and data visualization to communicate insights and 
-                reinforced my interest in further developing my skills in data analysis and business intelligence.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <MarqueeTag />
-      </section>
-
-      {/* Acknowledgments */}
-      <section className="flex justify-center px-10 py-20">
-        <div className="max-w-4xl">
-          <h3 className="text-2xl md:text-3xl text-midnight font-syncopate uppercase mb-10">
-            Acknowledgments
-          </h3>
-
-          <div className="space-y-4 text-gray-700">
-            <p>
-              I would like to sincerely thank my supervisor, <strong>Shandeep Nagentheren</strong>, for his guidance, mentorship, and support throughout the work term. 
-              His encouragement gave me the opportunity to take ownership of my work, develop new skills, and gain a deeper understanding of the real estate industry.
-            </p>
-
-            <p>
-              To my fellow interns, <strong>Anthony Nasso</strong> and <strong>Arielle Smith</strong> thank you for making this co-op term so enjoyable; our lunch chats never failed to make me laugh.
-            </p>
-
-            <p>
-              Thank you, BGIS, for an incredible summer.
-            </p>
-
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <FooterBanner />
-    <Footer topRef="#leaseAnalystTop" />
-  </div>
+    acknowledgments={[
+      "I would like to thank my supervisor, Shandeep Nagentheren, for his guidance, mentorship, and trust throughout the work term. His support gave me the opportunity to take ownership of meaningful responsibilities and develop a deeper understanding of the real estate industry.",
+      "To my fellow interns, Anthony Nasso and Arielle Smith, thank you for making this co-op term so enjoyable; our lunch chats never failed to make me laugh.",
+      "Thank you BGIS, for an incredible summer."
+    ]}
+  />
 );
 
-export default WebDeveloperPage;
+export default LeaseAnalystPage;

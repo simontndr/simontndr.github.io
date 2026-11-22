@@ -1,305 +1,108 @@
-import Footer from '../../components/Footer';
-import Navbar from '../../components/Navbar';
-import Hero from '../../components/Hero';
-import KennaBg from '../../assets/hero-images/kennaBlurTransp.webp';
-import MarqueeTag from '../../components/MarqueeTag';
-import FooterBanner from '../../components/FooterBanner';
+import Report from "../../components/Report";
+
+// Placeholder logo — replace with your actual Kenna logo asset when available.
+const kennaLogo =
+  "data:image/svg+xml;utf8," +
+  encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+      <rect width="96" height="96" rx="20" fill="#17365D"/>
+      <text x="48" y="57" font-size="25" font-weight="700"
+        text-anchor="middle" font-family="sans-serif" fill="#FFFFFF">KENNA</text>
+    </svg>
+  `);
 
 const WebDeveloperPage = () => (
-  <div className="min-h-screen bg-gray-50">
-    <Navbar />
+  <Report
+    logo={kennaLogo}
+    companyName="Kenna"
+    companyUrl="https://www.kenna.ca"
+    title="My Experience at Kenna"
+    topId="webDevTop"
+    intro="From September to December 2025, I worked as a Web Application Developer at Kenna in Mississauga, Ontario, contributing to enterprise applications supporting BASF Agricultural Solutions. My work involved translating business requirements into application features, modernizing existing systems, and supporting data-driven reporting workflows. Through collaboration with developers and account managers, I gained practical experience in enterprise software delivery, data validation, and the processes required to deliver reliable solutions."
 
-    <Hero
-      id="webDevTop"
-      readMore="#abstract"
-      bgUrl={KennaBg}
-      imageUrl={""}
-      text="Being a Web Application Developer at Kenna"
-      textStyle="max-w-5xl text-4xl md:text-5xl font-bold text-midnight font-syncopate uppercase"
-      animate={false}
-    />
+    sections={[
+      {
+        id: "about",
+        group: 1,
+        title: "About Kenna",
+        tagline: "Customer First Thinking.",
+        content: [
+          "Founded in 1985 as AppliCan Marketing and rebranded in 2002, Kenna is a technology company specializing in customer engagement, CRM, and data-driven marketing solutions. Over the years, the company has evolved alongside CRM technologies, helping organizations navigate digital transformation.",
+          "Kenna has worked with globally recognized clients, including Sonos, Mercedes-Benz, and Coca-Cola. Its work brings together enterprise application development, analytics, and customer engagement, with an emphasis on usability, scalability, and reliability.",
+          "During my work term, I supported applications for BASF Agricultural Solutions, working in a collaborative environment where developers and account managers worked together to align application functionality with client requirements."
+        ],
+      },
+      {
+        id: "role",
+        group: 2,
+        title: "A glimpse into my role",
+        content: [
+          "As a Web Application Developer, I contributed to the development and maintenance of enterprise applications supporting BASF Agricultural Solutions. I worked on features for territory-based product allocation and inventory management, automated sales reporting, and the modernization of legacy application modules. These responsibilities required understanding existing workflows and translating requirements communicated by account managers into functional application updates.",
+          "I also supported data-related workflows, including importing and validating agricultural market records in SQL Server. Throughout the term, I worked within structured development and quality assurance processes, using project management and version control tools to track tasks, participate in code reviews, and coordinate releases. This provided valuable exposure to how technical teams collaborate to deliver and maintain business-facing systems."
+        ],
+      },
+      {
+        id: "tools",
+        group: 2,
+        title: "Tools",
+        tools: [
+          "React",
+          "JavaScript",
+          "SQL",
+          "Express",
+          "Jira",
+          "Bitbucket",
+          "Confluence",
+          "Excel"
+        ],
+      },
+      {
+        id: "accomplishments",
+        group: 2,
+        title: "Key Accomplishments",
+        content: [
+          <ul key="accomplishments" className="list-disc space-y-3 pl-5">
+            <li>
+              <strong>Translated business requirements into application features:</strong>{" "}
+              Implemented interactive data grids using KendoReact to support
+              territory-based product allocation and inventory management for
+              BASF Agricultural Solutions.
+            </li>
+            <li>
+              <strong>Modernized application workflows and reporting:</strong>{" "}
+              Contributed to migrating legacy IBM Notes and jQuery modules into
+              React, reducing redundant code, and built an API-based PDF export
+              workflow to automate sales summary reporting for retail account
+              managers.
+            </li>
+            <li>
+              <strong>Supported data accuracy and structured delivery:</strong>{" "}
+              Imported and validated 300+ agricultural market records in SQL
+              Server using Excel-generated scripts, while contributing to task
+              tracking, code reviews, and release coordination through Jira
+              and Bitbucket.
+            </li>
+          </ul>
+        ],
+      },
+      {
+        id: "takeaways",
+        group: 2,
+        title: "What I learned",
+        content: [
+          "This experience reinforced the importance of understanding the broader system before attempting to solve individual problems. Working with unfamiliar application modules taught me to investigate how different components interacted, trace issues to their root causes, and document my findings. I became more comfortable approaching unfamiliar tasks independently while recognizing when clarification from teammates was necessary.",
+          "I also developed a greater appreciation for the communication and quality assurance processes behind enterprise software delivery. Clear progress updates, thorough reviews, and structured release practices helped ensure that changes aligned with requirements and remained reliable for end users. Outside of my project work, completing a financial literacy course strengthened my understanding of concepts such as credit, insurance, and employee benefits, giving me a broader perspective on the financial considerations involved in professional decision-making."
+        ],
+      },
+    ]}
 
-    {/* Content */}
-    <div className="mx-auto font-manrope">
+    acknowledgments={[
+      "I would like to sincerely thank my supervisor, Nicholas Paul, for his mentorship and guidance throughout the term. From his example, I learned what it truly means to be an effective and supportive manager in a professional environment.",
+      "I am also grateful to all my co-op peers, especially Meem Zulkernine, Chahana Reddy, and Tong Chanprakaisi, whose kindness and insight and made this experience both rewarding and memorable.",
+      "Thank you Kenna, for another impactful work term!"
 
-      {/* Abstract / Introduction */}
-      <section className="flex justify-center px-10 py-20">
-        <div className="max-w-3xl">
-          <h2
-            id="abstract"
-            className="text-2xl md:text-3xl font-bold text-midnight font-syncopate uppercase mb-10"
-          >
-            Abstract
-          </h2>
-          <p className="text-gray-700">
-            This report details my experience from September to December 2025 as a
-            Web Application Developer at Kenna in Mississauga, Ontario. During this
-            work term, I contributed to enterprise-facing web applications
-            supporting BASF Agricultural Solutions, translating evolving business
-            requirements into reliable, user-focused features. Through this role,
-            I strengthened my technical foundations in modern web development while
-            gaining exposure to professional software delivery, quality assurance,
-            and cross-functional collaboration.
-          </p>
-        </div>
-      </section>
-
-      {/* Information about the Employer */}
-      <section className="flex flex-col items-center bg-jicama">
-        <MarqueeTag />
-
-        <div className="max-w-4xl mx-10 my-20">
-          <h3 className="text-2xl md:text-3xl text-midnight font-syncopate uppercase mb-10">
-            About Kenna
-          </h3>
-
-          <div className="space-y-4 text-gray-700">
-            <p>
-              Founded in 1985 as AppliCan Marketing, <a href="https://www.kenna.ca" className="underline" target="_blank" rel="noreferrer">Kenna</a> was rebranded in 2002 and
-              has since grown into a technology company specializing in customer
-              engagement, CRM, and data-driven marketing solutions. Over three
-              decades, Kenna’s evolution has closely mirrored the advancement of
-              CRM technologies, positioning the company as an agent of change for
-              organizations navigating major digital inflection points.
-            </p>
-
-            <p>
-              Kenna has supported a range of globally recognized clients, including
-              Sonos, Mercedes-Benz, and Coca-Cola, by delivering tools that enable
-              more effective customer engagement and business decision-making. The
-              company operates at the intersection of applied computing science,
-              enterprise web development, and analytics, with a strong emphasis on
-              usability, scalability, and reliability.
-            </p>
-
-            <p>
-              Kenna’s head office is located in downtown Mississauga, Ontario,
-              directly across from Square One Shopping Centre. The organization
-              fosters a collaborative and welcoming workplace culture supported by
-              rigorous quality assurance practices and close collaboration between
-              developers and account managers who represent client needs. In
-              addition, Kenna places strong value on its social culture, creating
-              opportunities for coworkers to build meaningful connections that
-              strengthen teamwork and day-to-day collaboration.
-            </p>
-          </div>
-        </div>
-
-        <MarqueeTag />
-      </section>
-
-      {/* Job Description */}
-      <section className="mb-12 flex justify-center px-10 py-20">
-        <div className="max-w-4xl flex flex-col items-center">
-          <h3 className="text-2xl md:text-3xl text-midnight font-syncopate uppercase mb-10">
-            A Glimpse into My Role
-          </h3>
-
-          <div className="space-y-4 text-gray-700">
-            <p>
-              As a Web Application Developer at Kenna, I contributed to the
-              development and maintenance of enterprise web applications used by
-              BASF Agricultural Solutions. My responsibilities included
-              implementing new features, modernizing legacy systems, and ensuring
-              that delivered solutions aligned closely with business requirements
-              provided by account managers.
-            </p>
-
-            <p>
-              A defining aspect of this role was working within a production
-              environment that emphasized reliability and quality. Features were
-              developed alongside rigorous QA processes, formal reviews, and
-              structured release practices, reinforcing the importance of writing
-              clear, maintainable, and well-tested code.
-            </p>
-          </div>
-
-          {/* Responsibilities */}
-          <div className="mt-10 max-w-xl">
-            <h4 className="text-lg font-semibold text-midnight mb-3 uppercase">
-              Highlights of Responsibilities
-            </h4>
-            <ul className="pl-4 list-disc list-outside space-y-2 text-gray-700 text-left">
-              <li>
-                Implemented interactive data grids using KendoReact to support
-                territory-based product allocation and inventory management
-              </li>
-              <li>
-                Built a RESTful API using Express and Puppeteer to generate PDF
-                exports, automating sales summary reporting for retail account
-                managers
-              </li>
-              <li>
-                Led the migration of legacy IBM Notes and jQuery modules into a
-                modern React application, improving scalability and reducing
-                redundant code
-              </li>
-              <li>
-                Managed tasks, code reviews, and releases using Jira and Bitbucket,
-                contributing to smoother deployments and fewer integration issues
-              </li>
-              <li>
-                Imported and validated 300+ agricultural market records into SQL
-                Server using Excel-generated scripts to support accurate business
-                reporting
-              </li>
-            </ul>
-          </div>
-
-          {/* Technology Stack */}
-          <div className="mt-10">
-            <h4 className="text-lg font-semibold text-midnight mb-3 uppercase">
-              Technology Stack
-            </h4>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              {[
-                'React',
-                'JavaScript',
-                'KendoReact',
-                'SQL Server',
-                'Express',
-                'Puppeteer',
-                'Jira',
-                'Bitbucket',
-                'Confluence',
-                'Excel'
-              ].map((tech) => (
-                <span
-                  key={tech}
-                  className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Learning */}
-          <div className="mt-10 max-w-4xl">
-            <h4 className="text-lg font-semibold text-midnight mb-3 uppercase">
-              An Interesting Thing I Learned
-            </h4>
-            <p className="text-gray-700">
-              One of the most important lessons from this role was that clarity
-              consistently outperforms complexity in professional software
-              development. Writing self-documenting code through clear naming,
-              consistent structure, and intuitive abstractions made collaboration
-              easier, reduced review friction, and improved long-term
-              maintainability.
-            </p>
-            <p className="text-gray-700 mt-4">
-              I also gained a deeper appreciation for the structured processes
-              required to deliver production updates. Effective software delivery
-              depends not only on writing code, but on strong QA practices,
-              stakeholder alignment, and disciplined release workflows that ensure
-              reliability for end users.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Goals and Learning Outcomes */}
-      <section className="mb-12 flex flex-col items-center bg-jicama">
-        <MarqueeTag />
-
-        <div className="max-w-2xl mx-10 my-20">
-          <h3 className="text-2xl md:text-3xl text-midnight font-syncopate uppercase mb-10">
-            Goals & Learning Outcomes
-          </h3>
-
-          <div className="space-y-10">
-            <div className="border-l-4 border-midnight pl-6 text-left">
-              <h4 className="text-lg font-semibold text-midnight mb-2 uppercase">
-                	Enhance Problem Solving through the consistent completion of project tickets
-              </h4>
-              <p className="text-gray-700">
-                	From consistently completing project tickets throughout the semester, 
-                  I was able to noticeably strengthen my problem-solving skills. 
-                  Actively documenting my challenges and solutions helped me identify recurring patterns in my thinking 
-                  (both effective habits and areas that needed improvement) which ultimately made me more efficient when approaching new assignments. 
-                  One key realization was that when working with endpoints or tickets involving data transfer between the frontend and backend, 
-                  I often focused too narrowly on the most visible symptom of an issue. 
-                  In reality, these problems often required a more holistic understanding of how different components interacted. 
-                  To address this, I became much more intentional with my debugging strategies: using detailed print statements, 
-                  sketching out system diagrams, and mapping the relationships between files. 
-                  These practices helped me uncover root causes more systematically. 
-                  Over time, I grew increasingly comfortable tackling unfamiliar tickets independently, 
-                  while still knowing when to seek clarification from the team. 
-                  This learning goal made me more confident, reliable, and adaptable, and motivated me to contribute meaningfully to our team's progress.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-midnight pl-6 text-left">
-              <h4 className="text-lg font-semibold text-midnight mb-2 uppercase">
-                	Strengthen abilities in Quantitative Analysis through the study and application of Financial Principles
-              </h4>
-              <p className="text-gray-700">
-                Dedicating time each day to the Khan Academy Financial Literacy course allowed me to build a stronger foundation in quantitative concepts and financial reasoning. 
-                As I progressed through the units, I developed a much clearer understanding of how credit works - including the key factors that contribute to a credit score, 
-                such as credit utilization, payment history, and the length of credit accounts. 
-                This knowledge helped me better appreciate how everyday financial decisions can have long-term impacts. 
-                Beyond credit, the course also expanded my business knowledge in ways directly relevant to being a working professional in any field. 
-                For example, one of the modules explored different forms of insurance, and I learned how employee benefits such as health insurance, disability coverage, 
-                and retirement plans play a major role in evaluating job opportunities. These insights helped me interpret numerical information more confidently, 
-                evaluate trade-offs in real scenarios, and understand the broader financial context surrounding professional life. 
-                Sharing weekly takeaways reinforced my learning and sparked meaningful discussions during one-on-ones. 
-                Ultimately, this initiative strengthened both my analytical abilities and my confidence when approaching the technical and business-oriented aspects of team projects.
-              </p>
-            </div>
-
-            <div className="border-l-4 border-midnight pl-6 text-left">
-              <h4 className="text-lg font-semibold text-midnight mb-2 uppercase">
-                Improve written communication through effective correspondence with team members
-              </h4>
-              <p className="text-gray-700">
-                Through the daily practice of writing concise updates to my supervisor, 
-                I enhanced the clarity and structure of my written communication. 
-                This habit helped me stay organized, set daily intentions, and reflect on my progress. 
-                When encountering obstacles, I learned to articulate the context, my debugging attempts, and the specific support I needed, 
-                which made problem resolution faster and more collaborative. 
-                Over time, my communication became more proactive, precise, and helpful to the team, 
-                ultimately strengthening trust and demonstrating my commitment to learning.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <MarqueeTag />
-      </section>
-
-      {/* Acknowledgments */}
-      <section className="flex justify-center px-10 py-20">
-        <div className="max-w-4xl">
-          <h3 className="text-2xl md:text-3xl text-midnight font-syncopate uppercase mb-10">
-            Acknowledgments
-          </h3>
-
-          <div className="space-y-4 text-gray-700">
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p>
-                I would like to sincerely thank my supervisor,{' '}
-                <strong>Nicholas Paul</strong>, for his mentorship and guidance
-                throughout the term. From his example, I learned what it truly
-                means to be an effective and supportive manager in a professional
-                environment.
-              </p>
-            </div>
-
-            <p>
-              I am also grateful to my co-op peers and colleagues whose
-              collaboration, kindness, and strong social culture made this
-              experience both rewarding and memorable. I leave this role with
-              stronger technical skills, professional confidence, and excitement
-              for continued growth in future work terms.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
-
-    <FooterBanner />
-    <Footer topRef="#webDevTop" />
-  </div>
+    ]}
+  />
 );
 
 export default WebDeveloperPage;
