@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1153c96e.css",
-    "main.js": "/static/js/main.33dd3cb5.js",
+    "main.css": "/static/css/main.17c16f29.css",
+    "main.js": "/static/js/main.965b0fb3.js",
     "static/js/453.f11b90ff.chunk.js": "/static/js/453.f11b90ff.chunk.js",
     "static/media/photoCard.webp": "/static/media/photoCard.60b87e80f6b792b5c2c3.webp",
     "static/media/full_lace_border.png": "/static/media/full_lace_border.48d71972217a59adc94a.png",
@@ -15,12 +15,10 @@
     "static/media/ba-card.webp": "/static/media/ba-card.dfacb873243fd5b24a61.webp",
     "static/media/brick.webp": "/static/media/brick.8b532752e018cfb77a67.webp",
     "static/media/discussionBoard.webp": "/static/media/discussionBoard.c11c00fe07a4aebc3839.webp",
-    "static/media/reynoldsBlurTransp.webp": "/static/media/reynoldsBlurTransp.ad7b37ba0d3babe18e0b.webp",
     "static/media/sonny.webp": "/static/media/sonny.79a88d821f1dd6126a9d.webp",
     "static/media/calico.webp": "/static/media/calico.37cdf477b3f31eb9d3ca.webp",
     "static/media/chirp.webp": "/static/media/chirp.8836a82167a744b2808b.webp",
     "static/media/duck.webp": "/static/media/duck.46ba7006fedb19c1053c.webp",
-    "static/media/kennaBlurTransp.webp": "/static/media/kennaBlurTransp.532b59bc30662a3296ba.webp",
     "static/media/dataAnalysis.webp": "/static/media/dataAnalysis.a486074d3ee8d295ac1a.webp",
     "static/media/cardami.webp": "/static/media/cardami.34a34e6c5eb041c62a08.webp",
     "static/media/logo.png": "/static/media/logo.fb00ebb872cffbf62f8b.png",
@@ -30,15 +28,14 @@
     "static/media/back-up.svg": "/static/media/back-up.155bb335143a3f97908771ea68200884.svg",
     "static/media/read-more.svg": "/static/media/read-more.a0a293a179236f36664059b7823e8a50.svg",
     "static/media/journey.svg": "/static/media/journey.83b4535a4e150590f5adb98c01f215b3.svg",
-    "static/media/BGIS.webp": "/static/media/BGIS.f120a14f5000fc261b64.webp",
     "index.html": "/index.html",
     "static/media/marqueeStar.svg": "/static/media/marqueeStar.b763faa5887fcb9ba3722197cd681430.svg",
-    "main.1153c96e.css.map": "/static/css/main.1153c96e.css.map",
-    "main.33dd3cb5.js.map": "/static/js/main.33dd3cb5.js.map",
+    "main.17c16f29.css.map": "/static/css/main.17c16f29.css.map",
+    "main.965b0fb3.js.map": "/static/js/main.965b0fb3.js.map",
     "453.f11b90ff.chunk.js.map": "/static/js/453.f11b90ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1153c96e.css",
-    "static/js/main.33dd3cb5.js"
+    "static/css/main.17c16f29.css",
+    "static/js/main.965b0fb3.js"
   ]
 }
