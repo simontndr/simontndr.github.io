@@ -38,7 +38,7 @@ const Prose = ({ children }) => {
   if (children == null) return null;
   const items = Array.isArray(children) ? children : [children];
   return (
-    <div className="space-y-4 text-gray-700 leading-relaxed">
+    <div className="space-y-4 leading-relaxed text-midnight">
       {items.map((item, i) =>
         typeof item === "string" ? (
           <p key={i}>{item}</p>
@@ -59,7 +59,7 @@ const SectionHeading = ({ id, tagline, children }) => (
       {children}
     </h2>
     {tagline && (
-      <p className="mt-2 text-base italic text-midnight/60 md:text-lg">{tagline}</p>
+      <p className="mt-2 text-base italic text-midnight md:text-lg">{tagline}</p>
     )}
   </div>
 );
@@ -166,7 +166,7 @@ const Report = ({
         </h1>
       </div>
 
-      {intro && <p className="mt-12 text-gray-700 leading-relaxed">{intro}</p>}
+      {intro && <p className="mt-12 leading-relaxed text-midnight">{intro}</p>}
     </header>
   );
 
@@ -200,7 +200,7 @@ const Report = ({
                       </SectionHeading>
 
                       {tools && tools.length > 0 && (
-                        <p className="text-gray-700">{tools.join(" · ")}</p>
+                        <p className="text-midnight">{tools.join(" · ")}</p>
                       )}
                       <Prose>{content}</Prose>
                     </section>
