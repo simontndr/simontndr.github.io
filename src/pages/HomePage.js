@@ -123,7 +123,7 @@ const HomePage = () => {
               </p>
 
               <p className="mb-6">
-                Outside of work, you'll find me exploring local trails, meeting new people and watching cheesy 2000s films.
+                Outside of work, you'll find me exploring local trails, going for a run or watching cheesy 2000s films.
               </p>
 
             </div>

@@ -109,7 +109,7 @@ const JourneyPage = () => {
             Working across different environments, including government-funded research, corporate real estate, and financial services, has exposed me to diverse organizational cultures, workflows, and challenges.
           </p>
           <p className="mb-6">
-            Despite these different experiences, one common thread has emerged: data plays an important role in how organizations operate and make decisions. By combining my background in business, technology, and statistics, I've found success in using data to understand existing processes, identify opportunities for improvement, and support better-informed decisions.
+            Despite these different experiences, one common thread has emerged: data is the foundation of any successful organization. By combining my background in business, technology, and statistics, I've found success in using data to understand existing processes, identify opportunities for improvement, and support better-informed decisions.
           </p>
           <p>
             Although my journey is just getting started, I'm already grateful for the mentors and colleagues who have guided me along thus far. I'm looking forward to taking on new challenges, building my skills, and finding new ways to make an impact.
