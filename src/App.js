@@ -5,8 +5,6 @@ import HomePage from './pages/HomePage';
 import JourneyPage from './pages/JourneyPage';
 import NotFoundPage from './pages/NotFoundPage';
 
-import ReportPreviewPage from './pages/articles/ReportPreviewPage';
-
 import ResearchAssistantPage from './pages/articles/ResearchAssistantPage';
 import WebDeveloperPage from './pages/articles/WebDeveloperPage';
 import LeaseAnalystPage from './pages/articles/LeaseAnalystPage';
