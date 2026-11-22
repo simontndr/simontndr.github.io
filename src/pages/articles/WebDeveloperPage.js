@@ -1,15 +1,5 @@
 import Report from "../../components/Report";
-
-// Placeholder logo — replace with your actual Kenna logo asset when available.
-const kennaLogo =
-  "data:image/svg+xml;utf8," +
-  encodeURIComponent(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
-      <rect width="96" height="96" rx="20" fill="#17365D"/>
-      <text x="48" y="57" font-size="25" font-weight="700"
-        text-anchor="middle" font-family="sans-serif" fill="#FFFFFF">KENNA</text>
-    </svg>
-  `);
+import kennaLogo from "../../assets/company-logos/kenna_logo.jpeg"
 
 const WebDeveloperPage = () => (
   <Report
@@ -18,7 +8,22 @@ const WebDeveloperPage = () => (
     companyUrl="https://www.kenna.ca"
     title="My Experience at Kenna"
     topId="webDevTop"
-    intro="From September to December 2025, I worked as a Web Application Developer at Kenna in Mississauga, Ontario, contributing to enterprise applications supporting BASF Agricultural Solutions. My work involved translating business requirements into application features, modernizing existing systems, and supporting data-driven reporting workflows. Through collaboration with developers and account managers, I gained practical experience in enterprise software delivery, data validation, and the processes required to deliver reliable solutions."
+    intro={
+      <>
+        From September to December 2025, I worked as a Web Application Developer
+        at Kenna, contributing to enterprise applications supporting
+        {" "}<a
+          href="https://agriculture.basf.com/ca/en"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-4 hover:text-royal transition-colors"
+        >
+          BASF Agricultural Solutions
+        </a>{" "}. 
+        My work involved translating business requirements into application features, modernizing existing
+        systems, and supporting data-driven reporting workflows.
+      </>
+    }
 
     sections={[
       {
@@ -29,7 +34,7 @@ const WebDeveloperPage = () => (
         content: [
           "Founded in 1985 as AppliCan Marketing and rebranded in 2002, Kenna is a technology company specializing in customer engagement, CRM, and data-driven marketing solutions. Over the years, the company has evolved alongside CRM technologies, helping organizations navigate digital transformation.",
           "Kenna has worked with globally recognized clients, including Sonos, Mercedes-Benz, and Coca-Cola. Its work brings together enterprise application development, analytics, and customer engagement, with an emphasis on usability, scalability, and reliability.",
-          "During my work term, I supported applications for BASF Agricultural Solutions, working in a collaborative environment where developers and account managers worked together to align application functionality with client requirements."
+          "During my work term, I supported the CRM account with BASF Agricultural Solutions, working in a collaborative environment where developers and account managers worked together to align application functionality with client requirements."
         ],
       },
       {

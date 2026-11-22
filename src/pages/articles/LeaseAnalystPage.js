@@ -1,16 +1,6 @@
 
 import Report from "../../components/Report";
-
-// Placeholder logo — replace with your actual BGIS logo asset when available.
-const bgisLogo =
-  "data:image/svg+xml;utf8," +
-  encodeURIComponent(`
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
-      <rect width="96" height="96" rx="20" fill="#17365D"/>
-      <text x="48" y="57" font-size="27" font-weight="700"
-        text-anchor="middle" font-family="sans-serif" fill="#FFFFFF">BGIS</text>
-    </svg>
-  `);
+import bgisLogo from "../../assets/company-logos/bgis_logo.jpeg"
 
 const LeaseAnalystPage = () => (
   <Report
@@ -19,7 +9,22 @@ const LeaseAnalystPage = () => (
     companyUrl="https://www.bgis.com"
     title="My Experience at BGIS"
     topId="leaseAnalystTop"
-    intro="From May to August 2026, I worked as a Lease Data Analyst at BGIS, supporting lease administration for the National Bank account. My responsibilities focused on property data validation, reporting, process automation, and stakeholder coordination. Through Excel and Power Query solutions, I helped improve the accuracy and consistency of recurring administrative workflows while gaining practical experience in commercial real estate operations."
+    intro={
+      <>
+        From May to August 2026, I worked as a Lease Data Analyst at BGIS, supporting lease administration for the 
+        {" "}<a
+              href="https://www.nbc.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 hover:text-royal transition-colors"
+            >
+              National Bank of Canada
+        </a>{" "}.
+        My responsibilities focused on property data validation, reporting, process automation, and stakeholder coordination. 
+        Through Excel and Power Query solutions, I helped improve the accuracy and consistency of recurring administrative 
+        workflows while gaining practical experience in commercial real estate operations.
+      </>
+    }
 
     sections={[
       {

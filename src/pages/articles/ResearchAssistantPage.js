@@ -19,7 +19,24 @@ const ResearchAssistantPage = () => (
     companyUrl="https://csl.uwaterloo.ca/"
     title="My Experience at the Collaborative Systems Laboratory"
     topId="researchTop"
-    intro="From May to April 2026, I worked as a Research Assistant with the Collaborative Systems Laboratory (CSL), affiliated with the University of Guelph's College of Computational, Mathematical, and Physical Sciences (CCMPS). My work involved supporting the development of a web-based platform for human-computer interaction research, facilitating focus groups, and gathering participant feedback. This experience strengthened my understanding of requirements gathering, user-centred design, stakeholder engagement, and the importance of translating research needs into practical solutions."
+    intro={
+      <>
+        From May to April 2026, I worked as a Research Assistant with the Collaborative Systems Laboratory (CSL), 
+        affiliated with the University of Guelph's College of Computational, Mathematical, and Physical Sciences 
+        {" "}<a
+          href="https://www.uoguelph.ca/ccmps"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-4 hover:text-royal transition-colors"
+        >
+          (CCMPS)
+        </a>{" "}. 
+        My work involved supporting the development of a web-based platform for human-computer interaction research, 
+        facilitating focus groups, and gathering participant feedback. 
+        This experience strengthened my understanding of requirements gathering, user-centred design, stakeholder engagement,
+         and the importance of translating research needs into practical solutions.
+      </>
+    }
 
     sections={[
       {

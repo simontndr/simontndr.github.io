@@ -97,7 +97,7 @@ const CompanyLogoLink = ({ logo, companyName, companyUrl }) => {
       target="_blank"
       rel="noreferrer"
       aria-label={`Visit ${companyName} website (opens in new tab)`}
-      className="group relative rounded-2xl transition-transform duration-200 hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-midnight"
+      className="shadow-md group relative rounded-2xl transition-transform duration-200 hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-midnight"
     >
       {image}
 

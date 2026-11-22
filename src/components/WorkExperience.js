@@ -30,7 +30,7 @@ const WorkExperience = ({experience}) => {
           <div className="w-full md:w-[70%] flex flex-col items-start">
         
             <h3 className="font-syncopate uppercase text-midnight font-bold text-lg text-left mb-1">{jobTitle}</h3>
-            <p className="text-gray-500 text-left text-royal uppercase font-syncopate mb-3 text-sm md:text-base">@ {company}</p>
+            <p className="text-gray-500 text-left text-royal uppercase font-syncopate mb-3 text-sm md:text-base">{company}</p>
             <p className="mt-2 text-left font-manrope text-midnight text-sm md:text-base">{description}</p>
 
             {reportUrl && (
