@@ -86,7 +86,7 @@ const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">
 
-    <Hero id="homeTop" readMore="#about" bgUrl={heroBg} imageUrl={simonSvg} text="" textStyle={''}/>
+    <Hero id="homeTop" readMore="#about" bgUrl={heroBg} imageUrl={simonSvg}/>
     
     {/* Move navbar outside of padded container */}
     <Navbar />
@@ -109,11 +109,11 @@ const HomePage = () => {
 
         <div className="flex flex-col items-center text-left hero-content-text w-[100%] md:w-[50%] px-8 py-10">
           <div className="lg:w-[80%]">
-            <h2 className="font-syncopate font-bold text-2xl lg:text-3xl text-midnight mb-10 uppercase">
+            <h1 className="font-syncopate font-bold text-2xl lg:text-3xl text-midnight mb-10 uppercase">
               Leading&nbsp;Projects. <br/>
               Analyzing&nbsp;Data. <br/>
               Driving Insights.
-            </h2>
+            </h1>
 
             <div className="font-manrope text-midnight">
 

@@ -17,11 +17,13 @@ const Navbar = () => {
 
   const homeLink = location.pathname === '/' ? "#homeTop" : "/#homeTop";
 
+  // `id` is a stable identifier (keys, styling); `label` is the visible text.
+  // Keeping them separate lets the label be translated without breaking anything.
   const menuItems = [
-    { name: "about", to: location.pathname==="/" ? "#about" : "/#about" },
-    { name: "projects", to: location.pathname==="/" ? "#projects" : "/#projects" },
-    { name: "journey", to: "/journey/#journeyTop" },
-    { name: "connect", to: location.pathname+"#connect" },
+    { id: "about", label: "about", to: location.pathname==="/" ? "#about" : "/#about" },
+    { id: "projects", label: "projects", to: location.pathname==="/" ? "#projects" : "/#projects" },
+    { id: "journey", label: "journey", to: "/journey/#journeyTop" },
+    { id: "connect", label: "connect", to: location.pathname+"#connect" },
   ];
 
   return (
@@ -47,11 +49,11 @@ const Navbar = () => {
               <div className="flex items-baseline space-x-8">
                 {menuItems.map((item) => (
                   <Link
-                    key={item.name}
+                    key={item.id}
                     to={item.to}
-                    className={`text-midnight hover:underline ${item.name==='connect' ? 'font-bold font-syncopate uppercase text-xs' : 'font-manrope'}`}
+                    className={`text-midnight hover:underline ${item.id==='connect' ? 'font-bold font-syncopate uppercase text-xs' : 'font-manrope'}`}
                   >
-                    {item.name}
+                    {item.label}
                   </Link>
                 ))}
               </div>
@@ -127,12 +129,12 @@ const Navbar = () => {
               <div className="space-y-1">
                 {menuItems.map((item) => (
                   <Link
-                    key={item.name}
+                    key={item.id}
                     to={item.to}
                     onClick={closeMenu}
-                     className={`block  mb-4 text-midnight hover:underline ${item.name==='connect' ? 'font-bold font-syncopate uppercase text-xs mt-1' : 'font-manrope'}`}
+                     className={`block  mb-4 text-midnight hover:underline ${item.id==='connect' ? 'font-bold font-syncopate uppercase text-xs mt-1' : 'font-manrope'}`}
                   >
-                    {item.name}
+                    {item.label}
                   </Link>
                 ))}
               </div>

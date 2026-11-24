@@ -96,13 +96,13 @@ const JourneyPage = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center min-w-screen">
 
-    <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={journeySvg} text="" textStyle={''} animate={true}/>
+    <Hero id="journeyTop" readMore="#overview" bgUrl={journeyBg} imageUrl={journeySvg}/>
 
     <Navbar />
     
     <div id="overview" className="flex flex-col items-center justify-center w-full pt-20">
       <div className="md:w-[60%] px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-midnight font-syncopate uppercase mb-10">Overview</h2>
+        <h1 className="text-2xl md:text-3xl font-bold text-midnight font-syncopate uppercase mb-10">Overview</h1>
         <div className="text-midnight font-manrope text-left mb-[140px]">
           <p className="mb-6">
             My experiences have shaped how I approach problems, collaborate with others, and understand how organizations operate.
